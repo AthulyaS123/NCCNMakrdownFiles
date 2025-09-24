@@ -81,7 +81,6 @@ eႇects.
 
 ---
 ## Breast implants
-
 Breast implants are small bags filled with salt
 water, silicone gel, or both. They are placed
 under the breast skin or muscle to look like a
@@ -92,6 +91,7 @@ your skin or muscle and enlarged every few
 weeks for 2 to 3 months. When your skin is
 stretched to the proper size, you will have
 surgery to place the final implant.
+
 ---
 
 ## Flaps
