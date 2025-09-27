@@ -240,23 +240,23 @@ progesterone receptors need to be negative for the cancer to be considered HR-.
 A sample from a biopsy of your tumor may be tested to look for specific DNA
 (deoxyribonucleic acid) mutations/alterations, protein levels, or other molecular features.
 This information is used to choose the best treatment for you. It is sometimes called
-molecular testing or tumor pro¿ling, tumor sequencing, gene expression pooling, or
+molecular testing or tumor, tumor sequencing, gene expression pooling, or
 Genomic testing.
 
-In ER+ breast cancer, testing estrogen hormone receptors in at least 1 out of every 100 cancer cells. In ER-low–positive invasive breast cancer, testing ¿nds estrogen
+In ER+ breast cancer, testing estrogen hormone receptors in at least 1 out of every 100 cancer cells. In ER-low–positive invasive breast cancer, testing estrogen
 hormone receptors in 1 to 10 out of every 100 cancer cells.
 
-Biomarker testing includes tests of genes or their products (proteins). It identi¿es
+Biomarker testing includes tests of genes or their products (proteins). It identifies
 the presence or absence of mutations and certain proteins that might suggest treatment.
 Proteins are written like this: BRCA. Genes are written with italics like this: BRCA. HER2 and
 hormone receptor status are part of biomarker testing. Your treatment team will recommend
 the best types of biomarker testing that are important for you.
 
 Tumor mutation testing
-A sample of your tumor or blood may be used to see if the cancer cells have any speci¿c
-DNA mutations. This is a diႇerent type of DNA testing than the genetic testing for mutations
+A sample of your tumor or blood may be used to see if the cancer cells have any specific
+DNA mutations. This is a different type of DNA testing than the genetic testing for mutations
 you may have inherited from your birth parents. In tumor mutation testing, only the tumor is tested and not the rest of your body. Certain mutations such as PIK3CA, AKT1,
-PTEN, ESR1, NTRK, and RET can be targeted with speci¿c therapies. Testing
+PTEN, ESR1, NTRK, and RET can be targeted with specific therapies. Testing
 for ESR1 and RET mutations is done on hormone receptor-positive (HR+) tumors.
 
 PD-L1 testing
@@ -286,7 +286,7 @@ used by mismatch repair (MMR) proteins.
 Some cancers have DNA mutations for
 changes that prevent these errors from being
 used. This is called microsatellite instability
-(MSI) or MMR de¿ciency (dMMR). When
+(MSI) or MMR deficiency (dMMR). When
 cancer cells have more than a normal number
 of microsatellites, it is called MSI-high (MSI-H).
 This is often due to dMMR genes.
