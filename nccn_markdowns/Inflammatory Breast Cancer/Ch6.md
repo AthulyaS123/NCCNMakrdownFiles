@@ -120,7 +120,7 @@ option. You may choose a delayed breast
 reconstruction as part of the mastectomy.
 Radiation therapy (RT) is part of this treatment.
 
-After the mastectomy you will ¿nish
+After the mastectomy you will finish
 chemotherapy if you didn’t complete the
 course before surgery and have radiation
 therapy. Tumors that are estrogen receptor-
@@ -160,7 +160,7 @@ important.
 
 After treatment, you will receive follow-up care.
 During this time, your health will be monitored
-for side eႇects of treatment (late eႇects) and
+for side effects of treatment (late effects) and
 the possible return of cancer (recurrence). It
 is important to keep any follow-up care and
 imaging test appointments. Seek routine
@@ -173,7 +173,7 @@ such as headaches, menstrual spotting
 between periods or new onset of spotting after
 menopause (if prior tamoxifen use), shortness
 of breath while walking, or bone pain. Side
-eႇects can be managed. Continue to take all
+effects can be managed. Continue to take all
 medicine such as endocrine therapy exactly as
 prescribed and do not miss or skip doses.
 
