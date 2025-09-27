@@ -261,6 +261,10 @@ class PDFChapterExtractor:
 
         text_dict = page.get_text("dict")
         page_height = page.rect.height
+        
+        # You'll need to determine the main text color - check your debug output for dominant color
+        # This is typically 0 (black) for main text, but headers might be a different value
+        main_text_color = 0  # Adjust this based on your PDF's main text color
 
         for block_idx, block in enumerate(text_dict["blocks"]):
             if "lines" not in block:
@@ -271,12 +275,17 @@ class PDFChapterExtractor:
             font_sizes = []
             colors = []
             span_details = []
+            
+            # Check if any span in this block is bold
+            has_bold = False
             for line in block["lines"]:
                 for span in line["spans"]:
                     block_text += span["text"]
                     font_sizes.append(span["size"])
                     colors.append(span["color"])
                     span_details.append(span)
+                    if span.get("flags", 0) & 16:
+                        has_bold = True
 
             if not block_text.strip():
                 continue
@@ -285,20 +294,23 @@ class PDFChapterExtractor:
                 continue
 
             avg_font_size = sum(font_sizes) / len(font_sizes) if font_sizes else 0
+            dominant_color = max(set(colors), key=colors.count) if colors else 0
 
             # Column + font checks
             fits_left_col = abs(bbox[0] - boundaries["left_col_left"]) < TOLERANCE
             fits_right_col = abs(bbox[0] - boundaries["right_col_left"]) < TOLERANCE
             font_match = abs(avg_font_size - main_font_size) < 2
+            
+            # Check if this is a section header
+            is_section_header = (
+                avg_font_size > main_font_size + 2 and  # Bigger font size
+                dominant_color != main_text_color and   # Different color (light blue headers)
+                (fits_left_col or fits_right_col)       # Column aligned
+            )
 
-            # Only print classification result for key blocks
-            if block_text.strip().startswith("What is invasive breast cancer"):
-                print(f"\n=== IMPORTANT BLOCK: {block_text.strip()[:30]}... ===")
-                print(f"  Fits Left Col? {fits_left_col}")
-                print(f"  Fits Right Col? {fits_right_col}")
-                print(f"  Font Match? {font_match} (block:{avg_font_size:.1f} vs main:{main_font_size:.1f})")
-
-            if (fits_left_col or fits_right_col) and font_match:
+            # Classify blocks
+            if is_section_header:
+                # Section headers are treated as special main blocks
                 main_blocks.append({
                     "text": block_text.strip(),
                     "bbox": bbox,
@@ -308,9 +320,29 @@ class PDFChapterExtractor:
                     "y_top": bbox[1],
                     "y_center": (bbox[1] + bbox[3]) / 2,
                     "page": page_num,
-                    "column": "left" if fits_left_col else "right"
+                    "column": "left" if fits_left_col else "right",
+                    "is_bold": has_bold,
+                    "is_header": True,  # Mark as header
+                    "color": dominant_color
+                })
+            elif (fits_left_col or fits_right_col) and font_match:
+                # Regular main content
+                main_blocks.append({
+                    "text": block_text.strip(),
+                    "bbox": bbox,
+                    "font_size": avg_font_size,
+                    "x_left": bbox[0],
+                    "x_right": bbox[2],
+                    "y_top": bbox[1],
+                    "y_center": (bbox[1] + bbox[3]) / 2,
+                    "page": page_num,
+                    "column": "left" if fits_left_col else "right",
+                    "is_bold": has_bold,
+                    "is_header": False,  # Regular content
+                    "color": dominant_color
                 })
             else:
+                # Other content (captions, intro text, etc.)
                 other_blocks.append({
                     "text": block_text.strip(),
                     "bbox": bbox,
@@ -319,24 +351,48 @@ class PDFChapterExtractor:
                     "x_right": bbox[2],
                     "y_top": bbox[1],
                     "y_center": (bbox[1] + bbox[3]) / 2,
-                    "page": page_num
+                    "page": page_num,
+                    "is_bold": has_bold,
+                    "color": dominant_color
                 })
 
         return main_blocks, other_blocks
     
     def sort_main_blocks(self, blocks: List[Dict]) -> List[Dict]:
-        """Sort main column blocks in reading order"""
-        left_blocks = [b for b in blocks if b['column'] == 'left']
-        right_blocks = [b for b in blocks if b['column'] == 'right']
+        """Sort main blocks in reading order: page by page, left column then right column"""
+        # Group by page
+        by_page = {}
+        for block in blocks:
+            page = block.get('page', 0)
+            by_page.setdefault(page, []).append(block)
         
-        left_blocks.sort(key=lambda b: b['y_top'])
-        right_blocks.sort(key=lambda b: b['y_top'])
+        sorted_blocks = []
+        for page in sorted(by_page.keys()):
+            page_blocks = by_page[page]
+            
+            # Separate left and right column blocks
+            left_blocks = [b for b in page_blocks if b.get('column') == 'left']
+            right_blocks = [b for b in page_blocks if b.get('column') == 'right']
+            
+            # Sort each column by y-position (top to bottom)
+            left_blocks.sort(key=lambda b: b.get('y_top', 0))
+            right_blocks.sort(key=lambda b: b.get('y_top', 0))
+            
+            # Add left column first, then right column for this page
+            sorted_blocks.extend(left_blocks)
+            sorted_blocks.extend(right_blocks)
         
-        return left_blocks + right_blocks
+        return sorted_blocks
+
+
     
-    def is_heading(self, text: str, font_size: float, main_font_size: float) -> bool:
+    def is_heading(self, text: str, font_size: float, main_font_size: float, is_bold: bool = False) -> bool:
         """Detect headings based on text and style"""
         text = text.strip()
+        
+        # Bold text that's reasonably short is likely a header
+        if is_bold and len(text.split()) <= 12 and len(text) < 150:
+            return True
         
         # Question headings
         if text.endswith('?') and 10 < len(text) < 100:
@@ -404,9 +460,34 @@ class PDFChapterExtractor:
         
         return images
     
+    def format_caption_text(self, caption_text: str, font_size: float, main_font_size: float) -> str:
+        """
+        Format caption text based on its styling - detect headers vs body text
+        """
+        text = caption_text.strip()
+        
+        # Short text that's likely a caption header
+        if len(text.split()) <= 5 and len(text) < 50:
+            return f"### **{text}**"
+        
+        # Longer text that's likely caption body
+        return f"**{text}**"
+
+    
     def associate_other_blocks_with_images(self, other_blocks: List[Dict], images: List[Dict]) -> List[Dict]:
-        """Associate other blocks with nearby images"""
+        """Associate other blocks with nearby images and mark caption blocks as used"""
         for other_block in other_blocks:
+            other_page = other_block.get('page', 0)
+    
+            for img in images:
+                if not img['rect']:
+                    continue
+                
+                # Extract page number from image filename
+                img_filename = img.get('filename', '')
+                if f"page{other_page+1}_" not in img_filename:
+                    continue  # Skip images from different pages
+
             other_y = other_block['y_center']
             
             # Find closest image
@@ -428,9 +509,21 @@ class PDFChapterExtractor:
             if best_img and min_distance < 200:
                 if 'captions' not in best_img:
                     best_img['captions'] = []
-                best_img['captions'].append(other_block['text'])
+                
+                # Store both the text and formatting info for the caption
+                caption_info = {
+                    'text': other_block['text'],
+                    'font_size': other_block.get('font_size', 12),
+                    'is_header': len(other_block['text'].split()) <= 5 and len(other_block['text']) < 50
+                }
+                best_img['captions'].append(caption_info)
+                
+                # MARK THE CAPTION BLOCK AS USED SO IT DOESN'T GET PROCESSED AGAIN
+                other_block['used_as_caption'] = True
+                print(f"[DEBUG] Marked block as caption: '{other_block['text'][:30]}...'")
         
         return images
+
     
     def place_images(self, main_blocks: List[Dict], images: List[Dict]) -> List[Dict]:
         """Determine where to place images in the main content flow"""
@@ -461,7 +554,7 @@ class PDFChapterExtractor:
     
     def generate_main_content_markdown(self, main_blocks, chapter_title, main_font_size):
         """
-        Generate markdown for main content blocks.
+        Generate markdown for main content blocks with proper bold formatting.
         """
         markdown = [f"# {chapter_title} - Main Content\n"]
 
@@ -470,12 +563,19 @@ class PDFChapterExtractor:
             if not text:
                 continue
 
-            if self.is_heading(text, block["font_size"], main_font_size):
-                markdown.append(f"## {text.strip()}\n")
+            # Format text based on whether it should be bold
+            if block.get("is_bold", False):
+                text = f"**{text.strip()}**"
+
+            if self.is_heading(text, block["font_size"], main_font_size, block.get("is_bold", False)):
+                # Remove ** from headings since ## already makes them bold
+                clean_text = text.replace("**", "").strip()
+                markdown.append(f"## {clean_text}\n")
             else:
                 markdown.append(f"{text.strip()}\n")
 
         return "\n".join(markdown)
+
     
     def generate_other_elements_markdown(self, other_blocks, images, chapter_title):
         """
@@ -509,6 +609,10 @@ class PDFChapterExtractor:
         return "\n".join(markdown)
 
     
+    # Add these debug prints to your generate_combined_markdown function
+
+    
+
     def generate_combined_markdown(
     self,
     main_blocks: List[Dict],
@@ -517,135 +621,281 @@ class PDFChapterExtractor:
     title: str,
     main_font_size: float,
     boundaries: Dict[str, float],
-) -> str:
+    ) -> str:
         """
-        Generate combined markdown:
-        - Cluster beginning-section text at the top-left into a single intro section (plain text, never headers).
-        - Insert main_blocks as usual.
-        - Insert valid headings from other_blocks only if they are clearly section headers.
-        - Append remaining images and captions at the end of each page.
+        Generate combined markdown in proper reading order: 
+        beginning → page-by-page (left col → right col) → images per page
         """
-
-        def normalize_text(s: str) -> str:
-            return re.sub(r'\s+', ' ', (s or "").strip())
+        
+        def normalize(s: str) -> str:
+            return re.sub(r"\s+", " ", (s or "").strip())
 
         content = f"# {title}\n\n"
-
-        # Group by page
-        other_by_page = {}
-        for ob in other_blocks:
-            other_by_page.setdefault(ob["page"], []).append(ob)
-
-        main_by_page = {}
-        for mb in main_blocks:
-            main_by_page.setdefault(mb["page"], []).append(mb)
-
-        pages = sorted(set(list(main_by_page.keys()) + list(other_by_page.keys())))
-
-        for page in pages:
-            print(f"[COMBINED] ---- Processing page {page+1} ----")
-
-            page_height = self.doc[page].rect.height if self.doc else 1000
-            page_main = main_by_page.get(page, [])
-            page_other = other_by_page.get(page, [])
-
-            # --- 1. Cluster beginning section (top-left intro) ---
-            beginning_section = []
-            remaining_others = []
-            for ob in sorted(page_other, key=lambda b: b.get("y_top", b.get("y_center", 0))):
-                y_top = ob.get("y_top", ob.get("y_center", 0))
-                x_left = ob.get("x_left", 0)
-                if y_top < page_height * 0.35 and x_left < boundaries["left_col_right"] + 40:
-                    beginning_section.append(ob)
-                else:
-                    remaining_others.append(ob)
-
-            if beginning_section:
-                print(f"[COMBINED] Beginning section found with {len(beginning_section)} blocks (page {page+1})")
-                para_text = " ".join([normalize_text(b["text"]) for b in beginning_section if b.get("text")])
-                if para_text:
-                    content += f"{para_text}\n\n"
-                for b in beginning_section:
+        
+        # Step 1: Add beginning blocks (intro text from first page, top area only)
+        if other_blocks:
+            first_page = min(b.get('page', 0) for b in other_blocks)
+            first_page_other = [b for b in other_blocks if b.get('page', 0) == first_page]
+            
+            # Get beginning blocks (top 25% of first page, left side)
+            page_height = self.doc[first_page].rect.height if self.doc else 800
+            beginning_blocks = []
+            
+            for ob in first_page_other:
+                if ob.get('used_as_caption', False):
+                    continue
+                y_pos = ob.get('y_top', ob.get('y_center', 0))
+                x_pos = ob.get('x_left', 0)
+                
+                # Only take blocks from top-left area of first page
+                if (y_pos < page_height * 0.25 and 
+                    x_pos < boundaries.get('left_col_right', 300) + 40):
+                    beginning_blocks.append(ob)
+            
+            # Add beginning paragraph
+            if beginning_blocks:
+                beginning_text = " ".join([normalize(b["text"]) for b in beginning_blocks])
+                content += f"{beginning_text}\n\n"
+                
+                # Mark as used
+                for b in beginning_blocks:
                     b["used"] = True
-
-            # --- 2. Insert main_blocks + heading candidates from others ---
-            merged = list(page_main)
-            for ob in remaining_others:
-                text = normalize_text(ob.get("text", ""))
+                
+                print(f"[COMBINED] Added beginning section with {len(beginning_blocks)} blocks")
+        
+        # Step 2: Process main blocks (headers + content) in reading order
+        sorted_main = self.sort_main_blocks(main_blocks)
+        
+        # Group main blocks by page for processing
+        main_by_page = {}
+        for mb in sorted_main:
+            page = mb.get('page', 0)
+            main_by_page.setdefault(page, []).append(mb)
+        
+        # Process each page in order
+        pages = sorted(main_by_page.keys())
+        for page in pages:
+            print(f"[COMBINED] Processing page {page + 1}")
+            page_main_blocks = main_by_page[page]
+            
+            # Process all main blocks (headers and content) for this page in order
+            for block in page_main_blocks:
+                text = normalize(block.get("text", ""))
                 if not text:
                     continue
-
-                # Stricter heading detection for other_blocks
-                is_heading_style = (
-                    ob["font_size"] >= main_font_size + 2.5
-                    or text.endswith("?")
-                )
-                short_enough = len(text.split()) <= 10
-                in_col = (
-                    boundaries["left_col_left"] - 30 <= (ob.get("x_left", 0) + ob.get("x_right", 0)) / 2 <= boundaries["right_col_right"] + 30
-                )
-
-                if in_col and is_heading_style and short_enough:
-                    ob["as_heading"] = True
-                    merged.append(ob)
+                
+                # Check if this is a header
+                if block.get("is_header", False):
+                    content += f"## {text}\n\n"
+                    print(f"[COMBINED] Added header: {text[:50]}")
+                else:
+                    # Apply bold formatting if needed
+                    if block.get("is_bold", False):
+                        text = f"**{text}**"
+                    content += f"{text}\n\n"
+                    print(f"[COMBINED] Added content: {text[:50]}")
+            
+            # Add any leftover other blocks for this page (excluding captions and used blocks)
+            page_other = [b for b in other_blocks if b.get('page') == page]
+            leftover_blocks = []
+            
+            for ob in page_other:
+                if (ob.get('used', False) or 
+                    ob.get('used_as_caption', False)):
+                    continue
+                leftover_blocks.append(ob)
+            
+            # Add leftover blocks
+            for ob in leftover_blocks:
+                text = normalize(ob.get("text", ""))
+                if text:
+                    content += f"{text}\n\n"
                     ob["used"] = True
-                    print(f"[COMBINED] Other block promoted to HEADING (page {page+1}): {text[:60]!r}")
-                else:
-                    # treat as caption, handle later
-                    pass
-
-            # Sort merged blocks top-to-bottom
-            merged.sort(key=lambda b: b.get("y_top", b.get("y_center", 0)))
-
-            for item in merged:
-                text = normalize_text(item.get("text", ""))
-                if not text:
+                    print(f"[COMBINED] Added leftover: {text[:50]}")
+            
+            # Step 3: Add images for this page at the end
+            page_images = [img for img in images if f"page{page+1}_" in img.get("filename", "")]
+            
+            for img in page_images:
+                if img.get("inserted", False):
                     continue
-
-                if item in page_main:
-                    # main block
-                    if self.is_heading(text, item["font_size"], main_font_size):
-                        content += f"\n## {text}\n\n"
-                        print(f"[COMBINED] Main heading -> {text[:60]!r}")
-                    else:
-                        content += f"{text}\n\n"
-                        print(f"[COMBINED] Main paragraph -> {text[:60]!r}")
-
-                    # insert images tied to this block
-                    gidx = item.get("global_index")
-                    if gidx is not None:
-                        for img in images:
-                            if img.get("insert_after_block") == gidx and not img.get("inserted"):
-                                img_md = f"![Image](images/{img['filename']})"
-                                if img.get("captions"):
-                                    for caption in img["captions"]:
-                                        img_md += f"\n*{normalize_text(caption)}*"
-                                content += f"\n{img_md}\n\n"
-                                img["inserted"] = True
-                                print(f"[COMBINED] Inserted image after block {gidx}: {img['filename']}")
-
-                else:
-                    # promoted other heading
-                    content += f"\n## {text}\n\n"
-
-            # --- 3. Append remaining images (page-level) ---
-            for img in images:
-                if img.get("inserted"):
-                    continue
-                # Fix: use +1 because filenames like page7_img1.png are 1-based
-                if f"page{page+1}_" in img["filename"]:
-                    img_md = f"![Image](images/{img['filename']})"
-                    if img.get("captions"):
-                        for caption in img["captions"]:
-                            img_md += f"\n*{normalize_text(caption)}*"
-                    content += f"\n{img_md}\n\n"
-                    img["inserted"] = True
-                    print(f"[COMBINED] Appended leftover image for page {page+1}: {img['filename']}")
-
+                    
+                img_md = f"![Image](images/{img['filename']})"
+                
+                # Add captions
+                if img.get("captions"):
+                    for cap in img["captions"]:
+                        if isinstance(cap, dict):
+                            cap_text = normalize(cap['text'])
+                            if cap.get('is_header', False):
+                                img_md += f"\n### **{cap_text}**"
+                            else:
+                                img_md += f"\n**{cap_text}**"
+                        else:
+                            cap_text = normalize(cap)
+                            if len(cap_text.split()) <= 5:
+                                img_md += f"\n### **{cap_text}**"
+                            else:
+                                img_md += f"\n**{cap_text}**"
+                
+                content += f"\n{img_md}\n\n"
+                img["inserted"] = True
+                print(f"[COMBINED] Added image for page {page + 1}: {img['filename']}")
+        
         return content
 
 
 
+
+
+
+
+
+    def debug_page_analysis(self, page_num: int):
+        """Debug function to analyze a single page in detail"""
+        if not self.doc:
+            self.open_pdf()
+        
+        page = self.doc[page_num]
+        text_dict = page.get_text("dict")
+        page_height = page.rect.height
+        page_width = page.rect.width
+        
+        print(f"\n=== DEBUG PAGE {page_num + 1} ===")
+        print(f"Page dimensions: {page_width} x {page_height}")
+        
+        # Collect all text blocks with their properties
+        blocks_info = []
+        for block_idx, block in enumerate(text_dict["blocks"]):
+            if "lines" not in block:
+                continue
+            
+            bbox = block['bbox']
+            block_text = ""
+            font_sizes = []
+            
+            for line in block["lines"]:
+                for span in line["spans"]:
+                    block_text += span["text"]
+                    font_sizes.append(span["size"])
+            
+            if not block_text.strip():
+                continue
+                
+            avg_font_size = sum(font_sizes) / len(font_sizes) if font_sizes else 0
+            
+            blocks_info.append({
+                'idx': block_idx,
+                'text': block_text.strip()[:60] + "..." if len(block_text.strip()) > 60 else block_text.strip(),
+                'bbox': bbox,
+                'font_size': avg_font_size,
+                'x_left': bbox[0],
+                'x_right': bbox[2],
+                'y_top': bbox[1],
+                'width': bbox[2] - bbox[0],
+                'excluded': self.should_exclude_text(block_text, bbox, page_height)
+            })
+        
+        # Sort by y-position for visual order
+        blocks_info.sort(key=lambda b: b['y_top'])
+        
+        print(f"\nFound {len(blocks_info)} text blocks:")
+        print(f"{'Idx':<3} {'X-Left':<6} {'X-Right':<7} {'Width':<6} {'Font':<5} {'Excl':<4} {'Text'}")
+        print("-" * 80)
+        
+        for block in blocks_info:
+            print(f"{block['idx']:<3} {block['x_left']:<6.0f} {block['x_right']:<7.0f} "
+                f"{block['width']:<6.0f} {block['font_size']:<5.1f} {block['excluded']!s:<4} {block['text']}")
+        
+        return blocks_info
+
+    def debug_column_detection(self, page_num: int):
+        """Debug the column detection algorithm"""
+        if not self.doc:
+            self.open_pdf()
+        
+        # Run your existing analysis
+        style_analysis = self.analyze_text_styles([page_num])
+        boundaries = self.detect_main_content_area(style_analysis)
+        
+        print(f"\n=== COLUMN DETECTION DEBUG ===")
+        print(f"Detected boundaries: {boundaries}")
+        
+        # Show which blocks fit each column
+        page = self.doc[page_num]
+        text_dict = page.get_text("dict")
+        page_height = page.rect.height
+        
+        left_col_blocks = []
+        right_col_blocks = []
+        unclassified_blocks = []
+        
+        for block_idx, block in enumerate(text_dict["blocks"]):
+            if "lines" not in block:
+                continue
+            
+            bbox = block['bbox']
+            block_text = ""
+            font_sizes = []
+            
+            for line in block["lines"]:
+                for span in line["spans"]:
+                    block_text += span["text"]
+                    font_sizes.append(span["size"])
+            
+            if not block_text.strip() or self.should_exclude_text(block_text, bbox, page_height):
+                continue
+                
+            avg_font_size = sum(font_sizes) / len(font_sizes) if font_sizes else 0
+            
+            # Test column classification with different tolerances
+            fits_left_strict = abs(bbox[0] - boundaries["left_col_left"]) < TOLERANCE
+            fits_right_strict = abs(bbox[0] - boundaries["right_col_left"]) < TOLERANCE
+            fits_left_loose = abs(bbox[0] - boundaries["left_col_left"]) < 30
+            fits_right_loose = abs(bbox[0] - boundaries["right_col_left"]) < 30
+            font_match = abs(avg_font_size - boundaries['main_font_size']) < 2
+            
+            block_info = {
+                'text': block_text.strip()[:50] + "..." if len(block_text.strip()) > 50 else block_text.strip(),
+                'x_left': bbox[0],
+                'font_size': avg_font_size,
+                'fits_left_strict': fits_left_strict,
+                'fits_right_strict': fits_right_strict,
+                'fits_left_loose': fits_left_loose,
+                'fits_right_loose': fits_right_loose,
+                'font_match': font_match
+            }
+            
+            if fits_left_strict and font_match:
+                left_col_blocks.append(block_info)
+            elif fits_right_strict and font_match:
+                right_col_blocks.append(block_info)
+            else:
+                unclassified_blocks.append(block_info)
+        
+        print(f"\nLEFT COLUMN BLOCKS ({len(left_col_blocks)}):")
+        for block in left_col_blocks:
+            print(f"  X:{block['x_left']:.0f} Font:{block['font_size']:.1f} - {block['text']}")
+        
+        print(f"\nRIGHT COLUMN BLOCKS ({len(right_col_blocks)}):")
+        for block in right_col_blocks:
+            print(f"  X:{block['x_left']:.0f} Font:{block['font_size']:.1f} - {block['text']}")
+        
+        print(f"\nUNCLASSIFIED BLOCKS ({len(unclassified_blocks)}):")
+        for block in unclassified_blocks:
+            print(f"  X:{block['x_left']:.0f} Font:{block['font_size']:.1f} "
+                f"L-Loose:{block['fits_left_loose']} R-Loose:{block['fits_right_loose']} "
+                f"Font-Match:{block['font_match']} - {block['text']}")
+
+    def debug_quick_fix(self):
+        """Quick debugging session for the problem page"""
+        print("Running comprehensive debug for page 7...")
+        self.debug_page_analysis(6)  # Page 7 is index 6
+        self.debug_column_detection(6)
+
+    # Usage:
+    # extractor = PDFChapterExtractor("breast-invasive-patient.pdf")
+    # extractor.debug_quick_fix()
 
 
     
@@ -865,11 +1115,11 @@ def main():
     try:
         filepaths = extractor.save_chapter_markdown(
             first_page=7, 
-            last_page=7, 
+            last_page=9, 
             chapter_title="About invasive breast cancer",
             output_filename="chapter1"
         )
-        print(f"Successfully extracted pages 7-7:")
+        print(f"Successfully extracted pages 7-9:")
         print(f"  Main content: {filepaths['main']}")
         print(f"  Other elements: {filepaths['other']}")
         print(f"  Combined: {filepaths['combined']}")
@@ -884,5 +1134,8 @@ def main():
 if __name__ == "__main__":
     # Install required packages: pip install PyMuPDF pillow
     main()
-    #render_page_with_block_boxes(pdf_path, 7, "page8_blocks.jpg")
+    #render_page_with_block_boxes(pdf_path, 8, "page9_blocks.jpg")
     #print_block_details(pdf_path, 7)
+    #pdf_path = "breast-invasive-patient.pdf"
+    #extractor = PDFChapterExtractor(pdf_path, output_dir="nccn_markdowns\\Invasive Breast Cancer")
+    #extractor.debug_quick_fix()
