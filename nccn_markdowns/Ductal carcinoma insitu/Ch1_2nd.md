@@ -19,7 +19,7 @@ body.
 
 Anyone can develop breast cancer, including
 those assigned male at birth. Although there
-are some diႇerences between those assigned
+are some differences between those assigned
 male and those assigned female at birth,
 treatment is very similar for all genders.
 
