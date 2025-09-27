@@ -172,7 +172,7 @@ Axillary lymph node biopsy
 An axillary lymph node biopsy removes lymph nodes from the armpit to check for cancer cells.  
 
 Sentinel lymph node biopsy (SLNB)  
-A sentinel lymph node (SLN) is the ¿rst lymph node that cancer cells are most likely to spread
+A sentinel lymph node (SLN) is the first lymph node that cancer cells are most likely to spread
 to form a primary tumor. Sometimes, there can be more than one sentinel lymph node.
 Removal of the sentinel lymph nodes during surgery is called a sentinel lymph node biopsy
 (SLNB or SNB). This procedure is done during surgery such as a mastectomy (surgery to
@@ -182,7 +182,7 @@ sentinel nodes. They may or may not contain any cancer cells. Just because these
 are removed, it does not mean that they are positive for cancer.
 
 To find the sentinel lymph node, a radioactive material and other dyes are injected into the
-area where breast tumor is located. From here, the dye travels through the lymphatics in the breast to the lymph nodes. This helps the surgeon ¿nd which of the nodes are
+area where breast tumor is located. From here, the dye travels through the lymphatics in the breast to the lymph nodes. This helps the surgeon and which of the nodes are
 the sentinel lymph nodes. Once the nodes are found, those containing the radioactive
 material or dye are removed and tested by a pathologist. If cancer is found, then more than
 the sentinel lymph nodes may be removed.
@@ -203,10 +203,10 @@ Inflammatory breast cancers often produce greater than normal amounts of HER2. H
 epidermal growth factor receptor 2 (HER2) is a protein involved in normal cell growth.
 It is found on the surface of all cells. When amounts are high, it causes cells to grow and
 divide. Some breast cancers have too many HER2 genes or receptors. Too many HER2s is
-called HER2-positive (HER2+). You might hear it called HER2 overexpression or ampli¿cation.
+called HER2-positive (HER2+). You might hear it called HER2 overexpression or amplification.
 There are 2 tests for HER2: Immunohistochemistry (IHC) measures receptors. If the IHC score is 3+, the cancer is HER2+. If the score is 0 or 1, it is considered HER2-negative (HER2-). If the score is 2+, further testing is needed. In situ hybridization (ISH) counts the number of copies of the HER2 gene. This test is done mainly when the IHC score is unclear.
 
-Immunohistochemistry: Immunohistochemistry (IHC) is a special staining process that involves adding a chemical marker to cancer or immune cells. The cells are then studied using a microscope. IHC can ¿nd estrogen, progesterone, and HER2 receptors in breast cancer cells. A
+Immunohistochemistry: Immunohistochemistry (IHC) is a special staining process that involves adding a chemical marker to cancer or immune cells. The cells are then studied using a microscope. IHC can estrogen, progesterone, and HER2 receptors in breast cancer cells. A
 pathologist will measure how many cells have estrogen and/or progesterone receptors and
 the number of receptors inside each cell.
 
@@ -224,7 +224,7 @@ the cell. When hormones attach to receptors inside breast cancer cells, they can
 cancer to grow. If found, these receptors may be targeted using endocrine therapy.Estrogen – plays a role in ovary, uterus, and breast development. Progesterone – plays a role in
 menstrual cycle and pregnancy.
 
-In hormone receptor-positive (HR+) or hormone-sensitive breast cancer, IHC ¿nds
+In hormone receptor-positive (HR+) or hormone-sensitive breast cancer, IHC
 estrogen receptors (ER+), progesterone hormone receptors (PR+), or both (ER+/
 PR+). Most breast cancers are ER+/PR+ or ER+/PR-.
 
@@ -237,13 +237,13 @@ progesterone receptors need to be negative for the cancer to be considered HR-.
 
 ## Biomarker testing
 
-A sample from a biopsy of your tumor may be tested to look for speci¿c DNA
+A sample from a biopsy of your tumor may be tested to look for specific DNA
 (deoxyribonucleic acid) mutations/alterations, protein levels, or other molecular features.
 This information is used to choose the best treatment for you. It is sometimes called
 molecular testing or tumor pro¿ling, tumor sequencing, gene expression pooling, or
 Genomic testing.
 
-In ER+ breast cancer, testing ¿nds estrogen hormone receptors in at least 1 out of every 100 cancer cells. In ER-low–positive invasive breast cancer, testing ¿nds estrogen
+In ER+ breast cancer, testing estrogen hormone receptors in at least 1 out of every 100 cancer cells. In ER-low–positive invasive breast cancer, testing ¿nds estrogen
 hormone receptors in 1 to 10 out of every 100 cancer cells.
 
 Biomarker testing includes tests of genes or their products (proteins). It identi¿es
@@ -268,7 +268,7 @@ suppress the anti-tumor immune response. If
 your cancer expresses PD-L1, you might have
 treatment that combines chemotherapy and a
 checkpoint inhibitor therapy. This is designed to
-activate your immune system to better ¿ght oႇ
+activate your immune system to better fight off
 the cancer cells.
 
 Tumor mutational burden
@@ -282,10 +282,10 @@ that target the protein PD-L1.
 MSI-H/dMMR mutation
 Microsatellites are short, repeated strings of
 DNA. When errors or defects occur, they are
-¿xed by mismatch repair (MMR) proteins.
+used by mismatch repair (MMR) proteins.
 Some cancers have DNA mutations for
 changes that prevent these errors from being
-¿xed. This is called microsatellite instability
+used. This is called microsatellite instability
 (MSI) or MMR de¿ciency (dMMR). When
 cancer cells have more than a normal number
 of microsatellites, it is called MSI-high (MSI-H).
@@ -343,13 +343,13 @@ family history of cancer.
 BRCA tests
 Everyone has BRCA genes. Normal BRCA
 genes help to prevent tumor growth. They help
-¿x damaged cells and help cells grow normally.
+damaged cells and help cells grow normally.
 BRCA mutations put you at risk for more than
 one type of cancer. Mutations in BRCA1 or
 BRCA2 increase the risk of breast, ovarian,
 prostate, colorectal, pancreatic, and melanoma
 skin cancers. Mutated BRCA genes can also
-aႇect how some treatments work. These tests
+affect how some treatments work. These tests
 might be repeated.
 
 Other genes
