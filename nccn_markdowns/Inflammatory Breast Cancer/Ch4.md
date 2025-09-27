@@ -277,7 +277,7 @@ from the left side of the heart.
 You might be asked to stop taking or avoid
 certain herbal supplements when on a
 systemic therapy. Some supplements can
-aႇect the ability of a drug to do its job. This
+affect the ability of a drug to do its job. This
 is called a drug interaction.
 
 It is critical to speak with your care team
