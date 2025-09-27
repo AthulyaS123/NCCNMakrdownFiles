@@ -8,7 +8,7 @@ Treating breast cancer takes a team approach.
 Treatment decisions should involve a
 multidisciplinary team (MDT). An MDT is a
 team of health care and psychosocial care
-professionals from diႇerent professional
+professionals from different professional
 backgrounds who have knowledge (expertise)
 and experience in your type of cancer.
 This team is united in the planning and
@@ -37,7 +37,7 @@ surgery)
 Radiation therapy (RT)
 
 Systemic therapy works throughout the
-body. It includes: Chemotherapy,  HER2-targeted therapy, Inhibitors and other targeted therapies,  Immunotherapy,  Endocrine therapy
+body. It includes: Chemotherapy, HER2-targeted therapy, Inhibitors and other targeted therapies, Immunotherapy, Endocrine therapy
 
 IBC is treated with systemic (drug) therapy
 to shrink the tumor, followed by surgery to
@@ -62,19 +62,19 @@ goals for treatment and your treatment plan.
 Surgery is an operation or procedure to remove
 cancer from the body. A mastectomy removes
 all or part of the breast. Inflammatory breast
-cancer is often treated with a modi¿ed radical
-mastectomy. In a modi¿ed radical mastectomy,
+cancer is often treated with a modified radical
+mastectomy. In a modified radical mastectomy,
 the breast and underarm (axilla) sentinel lymph
 nodes (SLNs) are removed. Before removing
 the breast, the surgeon may do a sentinel
 lymph node biopsy (SLNB). Sentinel lymph
-nodes are the ¿rst lymph nodes cancer cells
+nodes are the first lymph nodes cancer cells
 are likely to have spread from the primary
 tumor.
 
 Breast reconstruction is an option after a
 mastectomy. If you opt for reconstruction, it
-will be done after ¿nishing cancer treatment.
+will be done after finishing cancer treatment.
 This is called delayed reconstruction. Breast
 reconstruction is often done in stages. You
 might want to consult with a plastic surgeon.
@@ -101,7 +101,7 @@ determine if any cancer cells have traveled to
 the lymph nodes. The lymph nodes removed
 are called the sentinel nodes.
 
-A sentinel lymph node (SLN) is the ¿rst lymph
+A sentinel lymph node (SLN) is the first lymph
 node or nodes that cancer cells are most likely
 to spread to from a primary tumor. Often, there
 is more than one sentinel lymph node. Just
@@ -113,7 +113,7 @@ injected into the breast. It may be a radioactive
 material, blue dye, or other tracer. The tracer
 travels through the lymph channels in the
 breast to the lymph nodes in the armpit.
-This helps the surgeon ¿nd which of the lymph nodes are the sentinel lymph nodes.
+This helps the surgeon and which of the lymph nodes are the sentinel lymph nodes.
 The lymph nodes containing the tracer are
 removed and tested by a pathologist.
  
@@ -130,7 +130,7 @@ lymphedema (fluid buildup) and other health
 issues.
 
 When the axillary nodes are removed with
-the breast, it is called a modi¿ed radical
+the breast, it is called a modified radical
 Mastectomy.
 
 There are 3 levels of axillary lymph nodes:
@@ -156,15 +156,15 @@ with certain systemic (drug) therapies. It may
 be used as supportive care to help ease pain
 or discomfort caused by cancer. Treatment is
 given in small daily doses on weekdays, with
-weekends oႇ.
+weekends off (confirm with your doctor!!!).
 
 You will see your radiation oncologist at least
 weekly to review treatment results and to help
-with side eႇects, such as sunburn-like rash.
+with side effects, such as sunburn-like rash.
 Ask your care team which radiation option(s)
 are best for your situation, if RT will be
 combined with chemotherapy, and what side
-eႇects to expect.
+effects to expect.
 
 The following are types of radiation therapy
 used to treat breast cancer:
@@ -195,11 +195,11 @@ Systemic therapy is drug therapy that works
 throughout the body. It is used before surgery
 to shrink the tumor or reduce the amount of
 cancer (called cancer burden).
- Preoperative or neoadjuvant
+Preoperative or neoadjuvant
 therapy is systemic therapy given before
 surgery.
 
- Postoperative or adjuvant therapy
+Postoperative or adjuvant therapy
 is systemic therapy given after surgery.
 
 
@@ -216,10 +216,10 @@ Anthracyclines include doxorubicin
 (Adriamycin), doxorubicin liposomal
 injection (Doxil), and epirubicin (Ellence).
 
- Taxanes include docetaxel, paclitaxel,
+Taxanes include docetaxel, paclitaxel,
 and albumin-bound paclitaxel.
 
- Antimetabolites include capecitabine
+Antimetabolites include capecitabine
 (Xeloda), fluorouracil, gemcitabine, and
 methotrexate.
 
@@ -234,7 +234,7 @@ of cycles given also vary.
 
 ### Antibody-drug conjugates (ADCs)
 An antibody drug conjugate (ADC) delivers
-cell-speci¿c chemotherapy. It attaches to a
+cell-specific chemotherapy. It attaches to a
 protein found on the outside of the cancer
 cell, then enters the cell. Once inside the
 cell, chemotherapy is released. ADCs are
@@ -257,15 +257,15 @@ targeted therapy is given with chemotherapy.
 However, it might be used alone or in
 combination with endocrine therapy.
 
- HER2 antibodies prevent HER2 growth
+HER2 antibodies prevent HER2 growth
 signals from outside the cell. They also
 increase the attack of immune cells on
 cancer cells.
- HER2 inhibitors stop HER2 growth
+HER2 inhibitors stop HER2 growth
 signals from within the cell.
- HER2 conjugates or HER2 antibody
+HER2 conjugates or HER2 antibody
 drug conjugates (ADCs) deliver cell-
-speci¿c chemotherapy. They attach
+specific chemotherapy. They attach
 directly to HER2s then enter the cell.
 Once inside, chemotherapy is released.
 Your heart will be monitored before and
@@ -282,9 +282,9 @@ is called a drug interaction.
 
 It is critical to speak with your care team
 about any supplements you may be
-taking. Some examples include:  Turmeric,  Ginkgo biloba,  Green tea extract,  St. John’s Wort,  Antioxidants
+taking. Some examples include: Turmeric, Ginkgo biloba, Green tea extract, St. John’s Wort, Antioxidants
 
-Certain medicines can also aႇect the
+Certain medicines can also affect the
 ability of a drug to do its job. Antacids,
 heart or blood pressure medicine, and
 antidepressants are just some of the
@@ -342,9 +342,9 @@ working again.
 Immunotherapy is a type of systemic treatment
 that tries to reactivate the immune system
 against tumor cells. The immune system
-has many on and oႇ switches. Tumors take
-advantage of oႇ switches. Immunotherapy
-can block these oႇ switches, which helps
+has many on and off switches. Tumors take
+advantage of off switches. Immunotherapy
+can block these off switches, which helps
 the immune system turn on. Immunotherapy
 can be given alone or with other types of
 treatment. Pembrolizumab (Keytruda) and
@@ -360,21 +360,21 @@ system is made up of organs and tissues that
 produce hormones. Hormones are natural
 chemicals released into the bloodstream.
 
- Estrogen is made mainly by the ovaries,
+Estrogen is made mainly by the ovaries,
 but is also made by other tissues in the
 body such as fat tissue.
- Progesterone is made mainly by the
+Progesterone is made mainly by the
 ovaries.
- Luteinizing hormone-releasing
+Luteinizing hormone-releasing
 hormone (LHRH) is made by a part
 of the brain called the hypothalamus. It
 tells the ovaries to make estrogen and
 progesterone and testicles to make
 testosterone. LHRH is also called
 gonadotropin-releasing hormone (GnRH).
- Androgen is made by the adrenal
+Androgen is made by the adrenal
 glands, testicles, and ovaries.
- Hormones may cause breast cancer to
+Hormones may cause breast cancer to
 grow. Endocrine therapy will stop your body
 from making hormones or it will block what
 hormones do in the body. This can slow tumor
@@ -384,7 +384,7 @@ hormone therapy or anti-estrogen. It is not the
 same as hormone replacement therapy (HRT)
 used for menopause.
 Endocrine therapy will suppress the production
-of hormones and aႇect one's ability to become
+of hormones and affect one's ability to become
 pregnant during treatment. Those who want to
 have children in the future should be referred
 to a fertility specialist before starting endocrine
@@ -438,9 +438,9 @@ inhibitors or GnRH agonists, can cause bone
 loss (osteoporosis), which puts you at an
 increased risk for fractures.
 
-Drugs used to prevent bone loss and fractures:  Oral bisphosphonates,  Zoledronic acid (Zometa),  Pamidronate (Aredia),  Denosumab (Prolia)
+Drugs used to prevent bone loss and fractures: Oral bisphosphonates, Zoledronic acid (Zometa), Pamidronate (Aredia), Denosumab (Prolia)
 
-Drugs used to treat bone metastases:  Zoledronic acid (Zometa),  Pamidronate (Aredia),  Denosumab (Xgeva)
+Drugs used to treat bone metastases: Zoledronic acid (Zometa), Pamidronate (Aredia), Denosumab (Xgeva)
 
 You may be screened for bone weakness
 (osteoporosis) using a bone mineral density
@@ -469,12 +469,12 @@ your doctor.
 
 Let your dentist know if you are taking any of
 these medicines. Also, ask your care team
-how these medicines might aႇect your teeth
+how these medicines might affect your teeth
 and jaw. Osteonecrosis, or bone tissue death
-of the jaw, is a rare but serious side eႇect. Tell
+of the jaw, is a rare but serious side effect. Tell
 your care team about any planned trips to the
 dentist and surgeries or dental procedures
-that might also aႇect the jawbone. It will be
+that might also affect the jawbone. It will be
 important to take care of your teeth and to see
 a dentist before starting treatment with any of
 these drugs.
@@ -494,19 +494,19 @@ against a standard treatment. If the
 results are good, it may be approved by
 the FDA.
 - **Phase IIIl**: trials study the safety and
-bene¿t of an FDA-approved treatment.
+benefit of an FDA-approved treatment.
 
 It depends on the clinical trial’s rules, called
 eligibility criteria. The rules may be about age,
 cancer type and stage, treatment history, or
 general health. They ensure that participants
-are alike in speci¿c ways and that the trial is as
+are alike in specific ways and that the trial is as
 safe as possible for the participants.
 
 Clinical trials are managed by a research
 team. This group of experts will review the
 study with you in detail, including its purpose
-and the risks and bene¿ts of joining. All of this
+and the risks and benefits of joining. All of this
 information is also provided in an informed
 consent form. Read the form carefully and
 ask questions before signing it. Take time to
