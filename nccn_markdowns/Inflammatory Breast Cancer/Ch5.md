@@ -22,10 +22,10 @@ supportive care.
 
 ## Side effects
 All cancer treatments can cause unwanted
-health issues called side eႇects. Side eႇects
+health issues called side effects. Side effects
 depend on many factors. These factors include
 the drug type and dose, length of treatment,
-and the person. Some side eႇects may just be
+and the person. Some side effects may just be
 unpleasant. Others may be harmful to one’s
 health. Treatment can cause several side
 effects. Some are very serious. Tell your care
@@ -91,7 +91,7 @@ people, and medicine that can help you.
 ### Fatigue
 Fatigue is extreme tiredness and inability to
 function due to lack of energy. Fatigue may
-be caused by cancer or it may be a side eႇect
+be caused by cancer or it may be a side effect
 of treatment. Let your care team know how
 you are feeling and if fatigue is getting in the
 way of doing the things you enjoy. Eating a
@@ -134,7 +134,7 @@ develops a fever, it is called febrile neutropenia
 (FN). With FN, your risk of infection may be
 higher than normal. This is because a low
 number of white blood cells leads to a reduced
-ability to fight infections. FN is a side eႇect of
+ability to fight infections. FN is a side effect of
 some types of systemic therapy.
 
 
@@ -203,7 +203,7 @@ with concentration and memory. Survivors
 are at risk for neurotoxicity and might be
 recommended for neuropsychological testing.
 Neuropsychology looks at how the health of
-your brain aႇects your thinking and behavior.
+your brain affects your thinking and behavior.
 Neuropsychological testing can identify your
 limits and doctors can create a plan to help
 with these limits.
@@ -213,7 +213,7 @@ system (neurotoxicity) causing neuropathy and
 problems with concentration, memory, and
 thinking. Neuropathy is a nerve problem that
 causes pain, numbness, tingling, swelling, or
-muscle weakness in diႇerent parts of the body.
+muscle weakness in different parts of the body.
 It usually begins in the hands or feet and gets
 worse with additional cycles of treatment. Most
 of the time, neuropathy improves gradually and
@@ -231,14 +231,14 @@ they should.
 
 ## Late effects
 
-Late eႇects are side eႇects that occur months
+Late effects are side effects that occur months
 or years after a disease is diagnosed or after
-treatment has ended. Late eႇects may be
+treatment has ended. Late effects may be
 caused by cancer or cancer treatment. They
 may include physical, mental, and social health
 concerns, and second cancers. The sooner
 late effects are treated the better. Ask the care
-team about what late eႇects could occur. This
+team about what late effects could occur. This
 will help you know what to look for.
 ---
 
