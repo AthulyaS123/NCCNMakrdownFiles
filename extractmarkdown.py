@@ -517,21 +517,21 @@ class PDFChapterExtractor:
     title: str,
     main_font_size: float,
     boundaries: Dict[str, float],
-    ) -> str:
+) -> str:
         """
         Generate combined markdown:
-        - beginning-section other_blocks go first (plain paragraphs, top-left)
-        - main_blocks (with inserted other-heading candidates that are in-column)
-        - image-related other_blocks and images go at the end of the page
-        This function marks other_blocks used by setting ob['used']=True and marks images
-        inserted inline by setting img['inserted']=True to avoid duplicates.
+        - Cluster beginning-section text at the top-left into a single intro section (plain text, never headers).
+        - Insert main_blocks as usual.
+        - Insert valid headings from other_blocks only if they are clearly section headers.
+        - Append remaining images and captions at the end of each page.
         """
+
         def normalize_text(s: str) -> str:
-            return re.sub(r'\s+', ' ', (s or "").strip()).lower()
+            return re.sub(r'\s+', ' ', (s or "").strip())
 
         content = f"# {title}\n\n"
 
-        # Group other_blocks and main_blocks by page
+        # Group by page
         other_by_page = {}
         for ob in other_blocks:
             other_by_page.setdefault(ob["page"], []).append(ob)
@@ -542,159 +542,108 @@ class PDFChapterExtractor:
 
         pages = sorted(set(list(main_by_page.keys()) + list(other_by_page.keys())))
 
-        # Build a set of normalized captions already attached to images (to avoid duplication)
-        caption_norms = set()
-        for img in images:
-            for c in img.get("captions", []) or []:
-                caption_norms.add(normalize_text(c))
-
-        # Helper: whether block center is in a main column
-        def _in_column(block, boundaries, tol=30):
-            center_x = (block.get("x_left", 0) + block.get("x_right", 0)) / 2.0
-            left_ok = (boundaries["left_col_left"] - tol) <= center_x <= (boundaries["left_col_right"] + tol)
-            right_ok = (boundaries["right_col_left"] - tol) <= center_x <= (boundaries["right_col_right"] + tol)
-            return left_ok or right_ok
-
         for page in pages:
-            page_main = main_by_page.get(page, [])
-            page_other = other_by_page.get(page, [])[:]  # copy
+            print(f"[COMBINED] ---- Processing page {page+1} ----")
 
             page_height = self.doc[page].rect.height if self.doc else 1000
-            # classification buckets
-            beginning_section = []
-            heading_candidates = []
-            image_related = []
+            page_main = main_by_page.get(page, [])
+            page_other = other_by_page.get(page, [])
 
-            # Partition other blocks into beginning_section vs rest
-            for ob in page_other:
+            # --- 1. Cluster beginning section (top-left intro) ---
+            beginning_section = []
+            remaining_others = []
+            for ob in sorted(page_other, key=lambda b: b.get("y_top", b.get("y_center", 0))):
                 y_top = ob.get("y_top", ob.get("y_center", 0))
                 x_left = ob.get("x_left", 0)
-                in_col = _in_column(ob, boundaries)
-
-                # Candidate: top-left "beginning section"
-                if y_top < page_height * 0.25 and x_left <= (boundaries.get("left_col_right", 300) + 40):
+                if y_top < page_height * 0.35 and x_left < boundaries["left_col_right"] + 40:
                     beginning_section.append(ob)
-                    print(f"[COMBINED-DECIDE] BEGINNING_SECTION candidate (page {page+1}) preview: {ob['text'][:80]!r}")
                 else:
-                    # Candidate headings: must be in a main column AND look like headings,
-                    # and be short (avoid long paragraph fragments becoming headings)
-                    is_heading_style = self.is_heading(ob["text"], ob["font_size"], main_font_size)
-                    short_enough = len(ob["text"].split()) <= 12
-                    if in_col and is_heading_style and short_enough:
-                        heading_candidates.append(ob)
-                        print(f"[COMBINED-DECIDE] HEADING_CANDIDATE (page {page+1}) preview: {ob['text'][:80]!r} (in_col={in_col}, short={short_enough})")
-                    else:
-                        image_related.append(ob)
-                        print(f"[COMBINED-DECIDE] IMAGE_RELATED (page {page+1}) preview: {ob['text'][:80]!r}")
+                    remaining_others.append(ob)
 
-            # 1) Write beginning section (top-left) first, as plain paragraphs (never headered)
-            beginning_section.sort(key=lambda b: b.get("y_top", b.get("y_center", 0)))
-            for ob in beginning_section:
-                normalized = normalize_text(ob.get("text", ""))
-                if not normalized:
-                    continue
-                # Avoid duplicates if caption already attached to an image
-                if normalized in caption_norms:
-                    print(f"[COMBINED] Skipping beginning-section block because its text appears as an image caption: {ob['text'][:60]!r}")
-                    ob['used'] = True
-                    continue
-                content += f"{re.sub(r'\\s+', ' ', ob['text'].strip())}\n\n"
-                ob['used'] = True
-                print(f"[COMBINED] Beginning-section (page {page+1}): {ob['text'][:80]!r}")
+            if beginning_section:
+                print(f"[COMBINED] Beginning section found with {len(beginning_section)} blocks (page {page+1})")
+                para_text = " ".join([normalize_text(b["text"]) for b in beginning_section if b.get("text")])
+                if para_text:
+                    content += f"{para_text}\n\n"
+                for b in beginning_section:
+                    b["used"] = True
 
-            # 2) Merge heading_candidates into the main flow (preserve main order)
-            merged = list(page_main)  # shallow copy preserves order
-            # sort heading_candidates top-to-bottom
-            heading_candidates.sort(key=lambda b: b.get("y_top", b.get("y_center", 0)))
-            for ob in heading_candidates:
-                ob_y = ob.get("y_top", ob.get("y_center", 0))
-                inserted = False
-                for idx_mb, mb in enumerate(merged):
-                    mb_y = mb.get("y_top", mb.get("y_center", 0))
-                    if ob_y < mb_y:
-                        merged.insert(idx_mb, ob)
-                        ob['used'] = True
-                        print(f"[COMBINED-INSERT] Inserted other-heading into page {page+1} at pos {idx_mb}: {ob['text'][:80]!r}")
-                        inserted = True
-                        break
-                if not inserted:
-                    merged.append(ob)
-                    ob['used'] = True
-                    print(f"[COMBINED-APPEND] Appended other-heading to end of page {page+1}: {ob['text'][:80]!r}")
-
-            # 3) Render merged list
-            for item in merged:
-                is_main = item in page_main
-                text = re.sub(r'\s+', ' ', item.get("text", "").strip())
+            # --- 2. Insert main_blocks + heading candidates from others ---
+            merged = list(page_main)
+            for ob in remaining_others:
+                text = normalize_text(ob.get("text", ""))
                 if not text:
                     continue
 
-                if is_main:
-                    # main blocks: header decision allowed (but still require column membership for header)
-                    if self.is_heading(text, item["font_size"], main_font_size) and _in_column(item, boundaries):
+                # Stricter heading detection for other_blocks
+                is_heading_style = (
+                    ob["font_size"] >= main_font_size + 2.5
+                    or text.endswith("?")
+                )
+                short_enough = len(text.split()) <= 10
+                in_col = (
+                    boundaries["left_col_left"] - 30 <= (ob.get("x_left", 0) + ob.get("x_right", 0)) / 2 <= boundaries["right_col_right"] + 30
+                )
+
+                if in_col and is_heading_style and short_enough:
+                    ob["as_heading"] = True
+                    merged.append(ob)
+                    ob["used"] = True
+                    print(f"[COMBINED] Other block promoted to HEADING (page {page+1}): {text[:60]!r}")
+                else:
+                    # treat as caption, handle later
+                    pass
+
+            # Sort merged blocks top-to-bottom
+            merged.sort(key=lambda b: b.get("y_top", b.get("y_center", 0)))
+
+            for item in merged:
+                text = normalize_text(item.get("text", ""))
+                if not text:
+                    continue
+
+                if item in page_main:
+                    # main block
+                    if self.is_heading(text, item["font_size"], main_font_size):
                         content += f"\n## {text}\n\n"
-                        print(f"[COMBINED] Main heading (page {page+1}) GLOBAL_IDX={item.get('global_index')} -> {text[:80]!r}")
+                        print(f"[COMBINED] Main heading -> {text[:60]!r}")
                     else:
                         content += f"{text}\n\n"
-                        print(f"[COMBINED] Main paragraph (page {page+1}) GLOBAL_IDX={item.get('global_index')} -> {text[:80]!r}")
+                        print(f"[COMBINED] Main paragraph -> {text[:60]!r}")
 
-                    # Insert images attached to this main block (by global index)
+                    # insert images tied to this block
                     gidx = item.get("global_index")
                     if gidx is not None:
                         for img in images:
                             if img.get("insert_after_block") == gidx and not img.get("inserted"):
                                 img_md = f"![Image](images/{img['filename']})"
-                                for cap in img.get("captions", []) or []:
-                                    img_md += f"\n*{re.sub(r'\\s+', ' ', cap.strip())}*"
+                                if img.get("captions"):
+                                    for caption in img["captions"]:
+                                        img_md += f"\n*{normalize_text(caption)}*"
                                 content += f"\n{img_md}\n\n"
                                 img["inserted"] = True
-                                print(f"[COMBINED] Inserted image after main GLOBAL_IDX={gidx}: {img['filename']}")
+                                print(f"[COMBINED] Inserted image after block {gidx}: {img['filename']}")
+
                 else:
-                    # this is an inserted other-heading (we only inserted validated heading_candidates here)
+                    # promoted other heading
                     content += f"\n## {text}\n\n"
-                    print(f"[COMBINED] Inserted other-heading into flow (page {page+1}): {text[:80]!r}")
-                    # item was already marked used when inserted
 
-            # 4) Append image-related text at the end of the page (as captions/aside)
-            # Avoid printing any text that already appears in image captions (caption_norms) or that was marked used.
-            remaining_image_related = []
-            for ob in image_related:
-                if ob.get('used'):
-                    continue
-                normalized = normalize_text(ob.get("text", ""))
-                if normalized in caption_norms:
-                    # skip because the caption will be printed with the image
-                    ob['used'] = True
-                    print(f"[COMBINED] Skipping image-related text because it matches an image caption (page {page+1}): {ob['text'][:80]!r}")
-                    continue
-                remaining_image_related.append(ob)
-
-            if remaining_image_related:
-                remaining_image_related.sort(key=lambda b: b.get("y_top", b.get("y_center", 0)))
-                print(f"[COMBINED] Appending {len(remaining_image_related)} image-related blocks at end of page {page+1}")
-                for ob in remaining_image_related:
-                    text = re.sub(r'\s+', ' ', ob.get("text", "").strip())
-                    if text:
-                        content += f"*{text}*\n\n"
-                        ob['used'] = True
-                        print(f"[COMBINED] Appended image-related (page {page+1}): {text[:80]!r}")
-
-            # 5) Add any remaining images for this page that weren't inserted inline
+            # --- 3. Append remaining images (page-level) ---
             for img in images:
-                if img.get('inserted'):
+                if img.get("inserted"):
                     continue
-                # determine if image belongs to this page by filename convention or rect page check
-                # (we rely on earlier extraction which uses page indexes)
-                # to avoid complexity, check if the filename includes the page number (common in saved naming)
-                if f"page{page+1}_" in img.get('filename', '') or img.get('rect') and img.get('rect')[1] < page_height + 1:
+                # Fix: use +1 because filenames like page7_img1.png are 1-based
+                if f"page{page+1}_" in img["filename"]:
                     img_md = f"![Image](images/{img['filename']})"
-                    for cap in img.get("captions", []) or []:
-                        img_md += f"\n*{re.sub(r'\\s+', ' ', cap.strip())}*"
+                    if img.get("captions"):
+                        for caption in img["captions"]:
+                            img_md += f"\n*{normalize_text(caption)}*"
                     content += f"\n{img_md}\n\n"
-                    img['inserted'] = True
-                    print(f"[COMBINED] Appended remaining image for page {page+1}: {img['filename']}")
+                    img["inserted"] = True
+                    print(f"[COMBINED] Appended leftover image for page {page+1}: {img['filename']}")
 
         return content
+
 
 
 
