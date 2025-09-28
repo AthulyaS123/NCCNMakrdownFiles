@@ -77,7 +77,7 @@ of your breast, and any concerns you have.
 You can also seek the opinion of a plastic
 surgeon.
 
-![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNMakrdownFiles/blob/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page22_img1.png "Trusted source illustration")
+![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNMakrdownFiles/blob/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page22_img1.jpeg "Trusted source illustration")
 
 ---
 
