@@ -23,7 +23,7 @@ are some differences between those assigned
 male and those assigned female at birth,
 treatment is very similar for all genders.
 
- ![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNMakrdownFiles/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page7_img1.png "Trusted source illustration")
+ ![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNMakrdownFiles/blob/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page7_img1.jpeg "Trusted source illustration")
 
 ---
 
