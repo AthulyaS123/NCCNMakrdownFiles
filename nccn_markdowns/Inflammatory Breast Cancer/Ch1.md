@@ -26,21 +26,21 @@ It’s important not to dismiss any strange breast skin changes, including redne
 
 Like other breast cancers, IBC can happen in those assigned male at birth. Although there are some differences between those assigned male and those assigned female at birth, treatment is very similar for all genders.  
 
-What are the parts of the breast?  
-The breast is a gland on the chest. The breast is made of milk ducts, fat, nerves, lymph and blood vessels, ligaments, and other connective tissue. Behind the breast is the pectoral (chest) muscle and ribs. Muscles and ligaments help hold the breast in place.  
+**What are the parts of the breast?** 
+- The breast is a gland on the chest. The breast is made of milk ducts, fat, nerves, lymph and blood vessels, ligaments, and other connective tissue. Behind the breast is the pectoral (chest) muscle and ribs. Muscles and ligaments help hold the breast in place.  
 
-Breast tissue contains glands that can make milk. These milk glands are called lobules. Lobules look like tiny clusters of grapes. Small tubes called ducts connect the lobules to the nipple.  
+- Breast tissue contains glands that can make milk. These milk glands are called lobules. Lobules look like tiny clusters of grapes. Small tubes called ducts connect the lobules to the nipple.  
 
-The ring of darker breast skin is called the areola. The raised tip within the areola is called the nipple. The nipple-areola complex (NAC) is a term that refers to both parts.  
+- The ring of darker breast skin is called the areola. The raised tip within the areola is called the nipple. The nipple-areola complex (NAC) is a term that refers to both parts.  
 
-Lymph drains from breast tissue into lymph vessels and travels to lymph nodes near your armpit (axilla). Lymph is a clear fluid that gives cells water and food. It also helps to fight germs. Nodes near the armpit are called axillary lymph nodes (ALNs). Cancer cells can travel though lymph and lymph vessels to lymph nodes.  
+- Lymph drains from breast tissue into lymph vessels and travels to lymph nodes near your armpit (axilla). Lymph is a clear fluid that gives cells water and food. It also helps to fight germs. Nodes near the armpit are called axillary lymph nodes (ALNs). Cancer cells can travel though lymph and lymph vessels to lymph nodes.  
 
 ---
 
 ## What can you do to get the best care?
 
-What can you do to get the best care?  
-Advocate for yourself. You have an important role to play in your care. In fact, you’re more likely to get the care you want by asking questions and making shared decisions with your care team. Find an oncologist who is willing to spend time answering all your questions. The better you understand the disease and your treatment options, the more informed decisions you can make. Consider seeking the opinion of a breast cancer specialist.  
+**What can you do to get the best care?**  
+- Advocate for yourself. You have an important role to play in your care. In fact, you’re more likely to get the care you want by asking questions and making shared decisions with your care team. Find an oncologist who is willing to spend time answering all your questions. The better you understand the disease and your treatment options, the more informed decisions you can make. Consider seeking the opinion of a breast cancer specialist.  
 
 The NCCN Guidelines for Patients will help you understand cancer care. With better understanding, you’ll be more prepared to discuss your care with your team and share your concerns. Many people feel more satisfied when they play an active role in their care.  
 
