@@ -101,7 +101,7 @@ diagnostic mammogram while you
 wait so if additional testing is needed, it
 can be done right away.
 
-![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page13_img1.png "Trusted source illustration")
+![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page13_img1.jpeg "Trusted source illustration")
 ---
 
 ## Biopsy
