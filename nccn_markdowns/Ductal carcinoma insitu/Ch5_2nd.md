@@ -38,17 +38,17 @@ with reconstruction.
 
 ## Flat closure
 
-In a total mastectomy with a Àat closure, the
+In a total mastectomy with a flat closure, the
 entire breast, including nipple, extra skin,
 fat, and other tissue in the breast area, is
 removed. The remaining skin is tightened
 and sewn together. No breast mound is
 created, and no implant is added. The scar
-will be slightly raised and diႇer in color than
-the surrounding skin. A Àat closure is not
-completely Àat or smooth. The result varies
+will be slightly raised and differ in color than
+the surrounding skin. A flat closure is not
+completely flat or smooth. The result varies
 from person to person. Ask to look at pictures
-from Àat closures so you know what to expect.
+from flat closures so you know what to expect.
 
 
 ---
@@ -76,7 +76,7 @@ Breasts can be reconstructed with implants
 and Àaps. All methods are generally safe,
 but as with any surgery, there are risks. Ask
 your treatment team for a complete list of side
-eႇects.
+effects.
 
 
 ---
@@ -94,25 +94,23 @@ surgery to place the final implant.
 
 ---
 
-## Flaps
-Breasts can be remade using skin from other
-parts of your body, known as Àaps. These Àaps
+## Flaps Breasts 
+Can be remade using skin from other parts of your body, known as flaps. These flaps
 are taken from the abdomen, buttocks, thigh,
-or from under the shoulder blade. Some Àaps
+or from under the shoulder blade. Some flaps
 are completely removed and then sewn in
-place. Other Àaps stay attached to your body
+place. Other flaps stay attached to your body
 but are slid over and sewn into place.
-There are several risks associated with Àaps,
-including death of fat in the Àap, which can
+There are several risks associated with flaps,
+including death of fat in the flap, which can
 cause lumps. A hernia may result from muscle
 weakness. Problems are more likely to occur
 among those who have diabetes or who
 smoke.
 
-—
 ## Implants and flaps
 Some breasts are reconstructed with both
-implants and Àaps. This method may give the
+implants and flaps. This method may give the
 reconstructed breast more volume to match
 the other breast. For any reconstruction, you
 may need surgery on your remaining breast to
@@ -122,28 +120,25 @@ match the size and shape of both breasts.
 
 ## Nipple replacement
 
-Nipples can be rebuilt using skin from the breast or another part of the body.  
-They can also be created with tattooing.  
-
-Reconstructed nipples do not have sensation.  
+Nipples can be rebuilt using skin from the breast or another part of the body. They can also be created with tattooing. Reconstructed nipples do not have sensation.  
 
 ---
 
 ## What to consider
 Some things to consider when deciding
-to have Àat closure or reconstruction after
+to have fat closure or reconstruction after
 mastectomy:
- Your desire – You may have a strong
-feeling towards Àat closure or one form
+- **Your desire** – You may have a strong
+feeling towards fat closure or one form
 of reconstruction after being given the
 options. Breast reconstruction should be
 a shared decision between you and your
 care team. Make your wishes known.
- Health issues – You may have health
+- **Health issues** – You may have health
 issues such as diabetes or a blood
-disorder that might aႇect or delay healing,
+disorder that might affect or delay healing,
 or make longer procedures unsafe.
- Tobacco use – Smoking delays wound
+- **Tobacco use** – Smoking delays wound
 healing and can cause mastectomy Àap
 death (necrosis), nipple-areola complex
 (NAC) necrosis in a nipple-sparing
@@ -152,13 +147,13 @@ implant-based reconstruction. In free Àap
 reconstruction, smoking increases the risk
 of complications. You are encouraged to
 stop smoking prior to reconstruction.
- Breast size and shape – There are
+- **Breast size and shape** – There are
 limits to the available sizes of breast
 implants. Very large breasts or breasts
 that lack tone or droop (called ptosis)
-might be diႈcult to match. Breast
+might be diffcult to match. Breast
 reduction surgery might be an option.
- Body mass index (BMI) – Those with
+- **Body mass index (BMI)** – Those with
 an elevated BMI have an increased risk of
 infections and complications with breast
 reconstruction.
