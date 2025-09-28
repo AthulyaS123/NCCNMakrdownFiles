@@ -6,21 +6,25 @@
 
 A lumpectomy removes the area of DCIS and a margin of healthy tissue around it.  
 This is also called breast-conserving surgery.  
- Local therapy focuses on the breast
+- Local therapy focuses on the breast
 and armpit (axilla) only. It includes surgery
 and radiation therapy (RT).
 
- Systemic therapy works throughout
+- Systemic therapy works throughout
 the body. It includes endocrine therapy.
 Chemotherapy is not used to treat DCIS.
 
-Option 1: • Lumpectomy with whole breast radiation therapy (WBRT)
-• Lumpectomy with WBRT and radiation boost
-Option 2: • Lumpectomy with accelerated partial breast irradiation (APBI) or partial breast
-irradiation (PBI)
-Option 3: • Lumpectomy only (not an option for most people)
-Option 4: • Total mastectomy with sentinel lymph node biopsy (SLNB)
-• Flat closure or reconstruction after mastectomy
+- Option 1:
+  - Lumpectomy with whole breast radiation therapy (WBRT)
+  - Lumpectomy with WBRT and radiation boost
+- Option 2:
+  - Lumpectomy with accelerated partial breast irradiation (APBI)
+  - partial breast irradiation (PBI)
+- Option 3:
+  - Lumpectomy only (not an option for most people)
+- Option 4:
+  - Total mastectomy with sentinel lymph node biopsy (SLNB)
+  - Flat closure or reconstruction after mastectomy
 
 A lumpectomy is also known as breast-
 conserving surgery (BCS). It may or may not
@@ -78,19 +82,18 @@ mastectomy removes the breast but not all
 of the skin. A nipple-sparing mastectomy
 preserves the nipple-areola complex (NAC)
 and the skin. Not everyone is a candidate for
-nipple-sparing mastectomy. You might choose
-to have a Àat closure or breast reconstruction
+nipple-sparing mastectomy. You might chooseto have closure or breast reconstruction
 after a mastectomy.
 
- Cancer may be found at the surgical
+- Cancer may be found at the surgical
 margin.
- The tumor might be large, too big, or
+- The tumor might be large, too big, or
 Widespread.
- You may be at risk of developing a
+- You may be at risk of developing a
 second cancer.
- You might have a health issue.
- You may want a mastectomy.
- You may not be able to receive radiation
+- You might have a health issue.
+- You may want a mastectomy.
+- You may not be able to receive radiation
 to the breast area.
 
 A sentinel lymph node biopsy (SLNB) is done
@@ -112,7 +115,7 @@ Anyone can develop breast
 cancer, including those
 assigned male at birth.
 Although there are some
-diႇerences between those
+differences between those
 assigned male and those
 assigned female at birth,
 treatment is very similar for all
@@ -130,29 +133,29 @@ treatment after breast-conserving surgery,
 
 Consider endocrine therapy for 5 years for those with estrogen receptor-positive (ER+) DCIS if
 treated with:
-• Breast-conserving surgery (lumpectomy) and radiation therapy (RT)
-• Lumpectomy alone
-• Mastectomy on one side only
+- Breast-conserving surgery (lumpectomy) and radiation therapy (RT)
+- Lumpectomy alone
+- Mastectomy on one side only
 
 Endocrine therapy options:
-• For those in premenopause, tamoxifen
-• For those in menopause, tamoxifen or aromatase inhibitor (AI)
+For those in premenopause, tamoxifen
+For those in menopause, tamoxifen or aromatase inhibitor (AI)
 
 Endocrine therapy includes treatments that
 stop cancer growth caused by hormones. It is
 sometimes called hormone therapy. It is not the
 same as hormone replacement therapy (HRT).
- Breast-conserving surgery (lumpectomy)
+- Breast-conserving surgery (lumpectomy)
 with radiation therapy (RT)
- Lumpectomy alone
- Mastectomy on one side only
+- Lumpectomy alone
+- Mastectomy on one side only
 There is more than one type of endocrine
 therapy. The type prescribed by your care
 team is partly based on if you have menstrual
 periods.
- Those who have menstrual periods are in
+- Those who have menstrual periods are in
 premenopause. Tamoxifen is an option.
- Those whose menstrual periods have
+- Those whose menstrual periods have
 stopped for more than 12 months are in
 menopause. Tamoxifen or an aromatase
 inhibitor (AI) is an option.
@@ -196,7 +199,7 @@ chance of developing breast cancer in the
 future. Changes in your lifestyle include eating
 a mostly plant-based diet, exercising, limiting
 alcohol, and quitting smoking. Your care team
-can oႇer information and support on how to
+can order information and support on how to
 lower your risk.
 
 
