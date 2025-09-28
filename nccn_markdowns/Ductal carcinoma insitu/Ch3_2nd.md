@@ -115,7 +115,7 @@ considering breast reconstruction surgery,
 it requires collaboration between a breast
 surgeon and a reconstructive (plastic) surgeon.
 
- ![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNMakrdownFiles/blob/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page23_img1.png "Trusted source illustration")
+ ![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page23_img1.jpeg "Trusted source illustration")
 
 ---
 
