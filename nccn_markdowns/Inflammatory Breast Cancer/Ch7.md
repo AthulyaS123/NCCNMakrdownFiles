@@ -1,6 +1,5 @@
 # 7. The breast after surgery
 
-—
 
 The recovery time for each procedure differs.
 This can affect your ability to return to work
@@ -51,13 +50,13 @@ at the time of the original cancer surgery and
 finished with another surgery later. A plastic
 surgeon performs breast reconstruction.
 
-Breasts can be reconstructed with implants
+- Breasts can be reconstructed with implants
 and flaps. All methods are generally safe,
 but as with any surgery, there are risks. Ask
 your treatment team for a complete list of side
 Effects.
 
-Breast implants are small bags filled with salt
+- Breast implants are small bags filled with salt
 water, silicone gel, or both. They are placed
 under the breast skin or muscle to look like a
 new breast following a mastectomy. A balloon-
@@ -71,7 +70,7 @@ causing other issues. You may feel pain from
 the implant or expander. Scar tissue or tissue
 death can occur.
 
-Breasts can be remade using skin from other
+- Breasts can be remade using skin from other
 parts of your body, known as flaps. These flaps
 are taken from the abdomen, buttocks, thigh,
 or from under the shoulder blade. Some flaps
@@ -123,12 +122,12 @@ options. Breast reconstruction should be
 a shared decision between you and your
 care team. Make your wishes known.
 
-Health issues – You may have health
+- **Health issues** – You may have health
 issues such as diabetes or a blood
 disorder that might affect or delay healing
 or make longer procedures unsafe.
 
-Tobacco use – Smoking delays wound
+- **Tobacco use** – Smoking delays wound
 healing and can cause mastectomy flap
 death (necrosis), nipple-areola complex
 (NAC) necrosis in a nipple-sparing
@@ -138,14 +137,14 @@ reconstruction, smoking increases the risk
 of complications. You are encouraged to
 stop smoking prior to reconstruction.
 
-Breast size and shape – There are
+- **Breast size and shape** – There are
 limits to the available sizes of breast
 implants. Very large breasts or breasts
 that lack tone or droop (called ptosis)
 might be difficult to match. Breast
 reduction surgery might be an option.
 
-Body mass index (BMI) – Those with
+- **Body mass index (BMI)** – Those with
 an elevated BMI have an increased risk of
 infections and complications with breast
 reconstruction.
