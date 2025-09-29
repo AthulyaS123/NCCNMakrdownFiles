@@ -1,8 +1,7 @@
 # 7. The breast after surgery
 
-—
 
-The recovery time for each procedure diႇers.
+The recovery time for each procedure differs.
 This can affect your ability to return to work
 or participate in activities. You might consider
 speaking with a plastic surgeon before surgery
@@ -18,7 +17,7 @@ fat, and other tissue in the breast area, is
 removed. The remaining skin is tightened
 and sewn together. No breast mound is
 created, and no implant is added. The scar
-will be slightly raised and diႇer in color than
+will be slightly raised and differ in color than
 the surrounding skin. A flat closure is not
 completely flat or smooth. The result varies
 from person to person. Ask to look at pictures
@@ -42,36 +41,36 @@ might require more than one procedure.
 
 You may have a choice as to when
 breast reconstruction is done. Immediate
-reconstruction is ¿nished within hours after
+reconstruction is finished within hours after
 removing the breast. Delayed reconstruction
 can occur months or years after the cancer
 surgery. Reconstruction can also be done in
 stages, with part of the reconstruction done
 at the time of the original cancer surgery and
-¿nished with another surgery later. A plastic
+finished with another surgery later. A plastic
 surgeon performs breast reconstruction.
 
-Breasts can be reconstructed with implants
+- Breasts can be reconstructed with implants
 and flaps. All methods are generally safe,
 but as with any surgery, there are risks. Ask
 your treatment team for a complete list of side
 Effects.
 
-Breast implants are small bags ¿lled with salt
+- Breast implants are small bags filled with salt
 water, silicone gel, or both. They are placed
 under the breast skin or muscle to look like a
 new breast following a mastectomy. A balloon-
 like device, called an expander, may be used
-¿rst to stretch out tissue. It will be placed under
+first to stretch out tissue. It will be placed under
 your skin or muscle and enlarged every few
 weeks for 2 to 3 months. When your skin is
 stretched to the proper size, you will have
-surgery to place the ¿nal implant Implants have a small risk of leaking or
+surgery to place the final implant Implants have a small risk of leaking or
 causing other issues. You may feel pain from
 the implant or expander. Scar tissue or tissue
 death can occur.
 
-Breasts can be remade using skin from other
+- Breasts can be remade using skin from other
 parts of your body, known as flaps. These flaps
 are taken from the abdomen, buttocks, thigh,
 or from under the shoulder blade. Some flaps
@@ -115,17 +114,20 @@ from another part of the body.
 ## What to consider
 
 The decision to have reconstruction is personal. Some things to think about include:  
- Your desire – You may have a strong
+
+Your desire – You may have a strong
 feeling towards flat closure or one form
 of reconstruction after being given the
 options. Breast reconstruction should be
 a shared decision between you and your
 care team. Make your wishes known.
- Health issues – You may have health
+
+- **Health issues** – You may have health
 issues such as diabetes or a blood
-disorder that might aႇect or delay healing
+disorder that might affect or delay healing
 or make longer procedures unsafe.
- Tobacco use – Smoking delays wound
+
+- **Tobacco use** – Smoking delays wound
 healing and can cause mastectomy flap
 death (necrosis), nipple-areola complex
 (NAC) necrosis in a nipple-sparing
@@ -134,13 +136,15 @@ implant-based reconstruction. In free flap
 reconstruction, smoking increases the risk
 of complications. You are encouraged to
 stop smoking prior to reconstruction.
- Breast size and shape – There are
+
+- **Breast size and shape** – There are
 limits to the available sizes of breast
 implants. Very large breasts or breasts
 that lack tone or droop (called ptosis)
-might be diႈcult to match. Breast
+might be difficult to match. Breast
 reduction surgery might be an option.
- Body mass index (BMI) – Those with
+
+- **Body mass index (BMI)** – Those with
 an elevated BMI have an increased risk of
 infections and complications with breast
 reconstruction.

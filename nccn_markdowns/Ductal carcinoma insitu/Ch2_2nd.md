@@ -12,7 +12,7 @@ life. Be prepared to list any illness or injury and
 when it happened. Bring a list of old and new
 medicines and any over-the-counter (OTC)
 medicines, herbals, or supplements you take.
-Some supplements interact with and aႇect
+Some supplements interact with and affect
 medicines that your care team may prescribe. 
 Tell your care team about any symptoms you
 have. A medical history, sometimes called
@@ -47,7 +47,6 @@ changes.
 Feel for enlarged lymph nodes in your
 neck, underarm, and groin.
 
-—
 Clinical breast exam (CBE) is a physical exam
 of the bare breast performed by a health care
 provider to check for lumps or other changes.
@@ -83,25 +82,25 @@ you will likely be asked to hold your breath for
 images.
 
 
-• Screening mammograms are done
+- Screening mammograms are done
 on a regular basis when there are no
 signs or symptoms of breast cancer.
 Results take a few days.
-• Diagnostic mammograms are
+- Diagnostic mammograms are
 used for those who have symptoms
 such as a lump, pain, nipple thickening
 or discharge, or whose breasts have
 changed shape or size.
-• Diagnostic mammograms are
+- Diagnostic mammograms are
 also used to take a closer look at an
 abnormal area found in a screening
 mammogram.
-A radiologist will evaluate the
+- A radiologist will evaluate the
 diagnostic mammogram while you
 wait so if additional testing is needed, it
 can be done right away.
 
-![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNMakrdownFiles/blob/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page13_img1.png "Trusted source illustration")
+![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Ductal%20carcinoma%20insitu/page13_img1.jpeg "Trusted source illustration")
 ---
 
 ## Biopsy
@@ -113,9 +112,9 @@ report called a pathology report. Ask questions
 about your biopsy results and what it means
 for your treatment.
 
-- **Core needle biopsy**:  Fine-needle aspiration (FNA) or
+- **Core needle biopsy**: Fine-needle aspiration (FNA) or
 core biopsy (CB) uses needles of
-diႇerent sizes to remove a sample of
+different sizes to remove a sample of
 tissue or Àuid. In a vacuum-assisted
 core biopsy (VACB), suction is used
 through a needle to remove the sample
@@ -161,7 +160,6 @@ information on next steps.
 ---
 
 ## Estrogen receptor (ER) testing
-
 Estrogen is a hormone that plays a role in
 breast development. It is made by a gland in
 your body. A receptor is a protein found inside
@@ -174,7 +172,7 @@ cause cancer to grow. If found, these estrogen
 receptors may be targeted using endocrine
 therapy.
 
-Immunohistochemistry (IHC) is a special
+- Immunohistochemistry (IHC) is a special
 staining process that involves adding a
 chemical marker to cells. These cells are
 then studied using a microscope. IHC can
@@ -185,7 +183,7 @@ of estrogen receptors inside each cell. Test
 results will either be estrogen receptor-positive
 (ER+) or estrogen receptor-negative (ER-).
 
-In estrogen receptor-positive (ER+) breast
+- In estrogen receptor-positive (ER+) breast
 cancer, IHC finds estrogen hormone receptors
 in at least 1 out of every 100 cancer cells.
 ER+ cancer cells may need estrogen to
@@ -193,14 +191,14 @@ grow. These cells may stop growing or die
 with endocrine treatment to block estrogen
 production or estrogen receptor signaling.
 
-Estrogen receptor-negative (ER-) breast
+- Estrogen receptor-negative (ER-) breast
 cancer cells do not have estrogen hormone
 receptors. These cancer cells do not need
 estrogen to grow and continue to grow.
 Therefore, estrogen-blocking treatment is not
-eႇective.
+effective.
 
-HER2 testing is not used in the
+- HER2 testing is not used in the
 diagnosis and treatment of DCIS.
 
 
@@ -248,7 +246,7 @@ BRCA mutations put you at risk for more than
 one type of cancer. Mutations in BRCA1 or BRCA2 increase the risk of breast, ovarian,
 prostate, colorectal, pancreatic, and melanoma
 skin cancers. Mutated BRCA genes can also
-aႇect how some treatments work. These tests
+affect how some treatments work. These tests
 might be repeated. Other genes such as PALB2, p53, CHEK2,
 and ATM might be tested. For example, PALB2
 normally helps prevent cancer. When PALB2
@@ -267,8 +265,7 @@ diagnosed. Based on testing, your cancer will
 be assigned a stage. Staging helps to predict
 prognosis and is needed to make treatment
 decisions. A prognosis is the course your
-cancer will likely take.
-Staging is based on a combination of
+cancer will likely take. Staging is based on a combination of
 information to reach a final numbered stage.
 It takes into account what can be felt during a
 physical exam, what can be seen on imaging
@@ -278,19 +275,19 @@ at the initial evaluation. More information can
 be gathered as treatment begins.
 
 
- Clinical stage (c) is the rating given
+- Clinical stage (c) is the rating given
 before any treatment. It is based on a
 physical exam, biopsy, and imaging tests.
 An example might look like cT0 or cN1.
 Tests are done before any treatment as
-part of an initial diagnosis.  Pathologic stage (p) or surgical
+part of an initial diagnosis. Pathologic stage (p) or surgical
 stage is determined by examining tissue
 removed during surgery. An example
 might be pT1.
 
-The tumor, node, metastasis (TNM) system is
+- The tumor, node, metastasis (TNM) system is
 used to stage breast cancer. In this system,
-the letters T, N, and M describe diႇerent areas
+the letters T, N, and M describe different areas
 of cancer growth. Based on cancer test results,
 your doctor will assign a score or number to
 each letter. The higher the number, the larger
@@ -300,12 +297,12 @@ cancer a stage. A TNM example might look like
 this: T1N0M0 or T1, N0, M0. For DCIS, it will
 look like this: TisN0M0.
 
- T (tumor) – Depth and spread of the
+- T (tumor) – Depth and spread of the
 main (primary) tumor(s) in one or both
 breasts
- N (node) – If cancer has spread to
+- N (node) – If cancer has spread to
 nearby (regional) lymph nodes
- M (metastasis) – If cancer has
+- M (metastasis) – If cancer has
 spread to distant parts of the body or
 metastasized
 
@@ -341,24 +338,24 @@ and receptor (hormone and HER2) status.
 Stages range from stage 0 to stage 4, with
 4 being the most advanced. They might be
 written as stage 0, stage I, stage II, stage III,
-and stage IV. InÀammatory breast cancer is
+and stage IV. Infammatory breast cancer is
 stage 3 (invasive) or 4 (metastatic).
 
- Stage 0 is noninvasive – Noninvasive
+- Stage 0 is noninvasive – Noninvasive
 breast cancer is rated stage 0. Ductal
 carcinoma in situ (DCIS) is found only in
 the ducts (Tis). It has not spread to the
 surrounding breast tissue, lymph nodes
 (N0), or distant sites (M0).
 
- Stages 1, 2, and 3 are invasive
+- Stages 1, 2, and 3 are invasive
 but not metastatic – Invasive breast
 cancer is rated stage 1, 2, or 3. It has
 grown outside the ducts, lobules, or
 breast skin. Cancer might be in the
 axillary lymph nodes.
 
- Stage 4 is metastatic – In stage
+- Stage 4 is metastatic – In stage
 4 breast cancer, cancer has spread to
 distant sites. It can develop from earlier
 stages. Sometimes, the first diagnosis is

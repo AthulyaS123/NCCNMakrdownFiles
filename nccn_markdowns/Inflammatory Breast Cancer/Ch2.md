@@ -94,36 +94,35 @@ Blood tests check for signs of disease and how well organs are working. They req
 Imaging tests take pictures of the inside of your body. Imaging tests show the primary
 tumor, or where the cancer started, and look for cancer in other parts of the body. A radiologist, a medical expert in interpreting imaging tests, will interpret the test and send a report to your doctor. The imaging tests described on the following pages are not in order of importance. You will not have all of these tests.
 
-Bone scan  
-A bone scan is used to find areas of bone damage or cancer spread. The bone scan uses a radiotracer. A radiotracer is a substance that releases small amounts of radiation. Before the pictures are taken, the tracer will be injected into your vein. It can take a few hours for the tracer to enter your bones. However, the test is quick and painless. A special camera will take pictures of the tracer in your bones as it moves over your body. Areas of bone damage take up more
-radiotracer than healthy bone and show up as bright spots on the pictures. Bone damage
+**Bone scan**
+- A bone scan is used to find areas of bone damage or cancer spread. The bone scan uses a radiotracer. A radiotracer is a substance that releases small amounts of radiation. Before the pictures are taken, the tracer will be injected into your vein. It can take a few hours for the tracer to enter your bones. However, the test is quick and painless. A special camera will take pictures of the tracer in your bones as it moves over your body. Areas of bone damage take up more radiotracer than healthy bone and show up as bright spots on the pictures. Bone damage
 can be caused by cancer, cancer treatment, previous injuries, or other health issues.
-Contrast material
-Contrast material is a substance used to improve the quality of the pictures of the inside of the body. It is used to make the pictures clearer. Contrast might be taken by mouth (oral) or given through a vein (IV). Oral contrast does not get absorbed from your intestines and will be passed with your next bowel movements. IV contrast will leave the body in the urine immediately after the test. The types of contrast vary and are directed for CT and MRI. Not all imaging tests require contrast, but many do.
+**Contrast material**
+- Contrast material is a substance used to improve the quality of the pictures of the inside of the body. It is used to make the pictures clearer. Contrast might be taken by mouth (oral) or given through a vein (IV). Oral contrast does not get absorbed from your intestines and will be passed with your next bowel movements. IV contrast will leave the body in the urine immediately after the test. The types of contrast vary and are directed for CT and MRI. Not all imaging tests require contrast, but many do.
 
 Tell your care team if you have had allergic reactions to contrast in the past. This is
 important. You might be given medicines to avoid those allergies. Contrast
 might not be used if you have a serious allergy or if your kidneys aren’t working well.
 
 
-CT scan (computed tomography)  
-A CT scan uses x-rays to make detailed pictures of areas inside the body. A contrast dye may be injected into a vein or swallowed.  
+**CT scan (computed tomography)**
+- A CT scan uses x-rays to make detailed pictures of areas inside the body. A contrast dye may be injected into a vein or swallowed.  
 
-Mammogram  
-A computed tomography (CT or CAT) scan uses x-rays and computer technology to take
+**Mammogram** 
+- A computed tomography (CT or CAT) scan uses x-rays and computer technology to take
 pictures of the inside of the body. It takes many x-rays of the same body part from different
 angles. All the images are combined to make one detailed picture. Intravenous (IV) contrast
 is often used.
 
-What’s the difference between a screening and diagnostic mammogram?
-A mammogram is a picture of the inside of your breast made using x-rays. During a
+**What’s the difference between a screening and diagnostic mammogram?**
+- A mammogram is a picture of the inside of your breast made using x-rays. During a
 mammogram, the breast is pressed between 2 plates while you stand in different positions.
 Multiple x-rays will be taken. A computer combines the x-rays to make detailed
 pictures.
-Screening mammograms are done on a regular basis when there are no signs or symptoms of breast cancer. Results take a few days. Diagnostic mammograms are used for those who have symptoms such as a lump, pain, nipple thickening or discharge, or those whose breasts have changed shape or size. An ultrasound (US) is often used with a diagnostic mammogram. Diagnostic mammograms are also used to take a closer look at an abnormal area found in a screening mammogram. A radiologist will evaluate the diagnostic mammogram while you wait so if additional testing is needed, it can be done right away. Both types of mammograms use low-dose x-rays to examine the breast. They may use either the standard 2-dimensional (2D) digital mammography or 3-dimensional (3D) mammograms known as tomosynthesis.
+- Screening mammograms are done on a regular basis when there are no signs or symptoms of breast cancer. Results take a few days. Diagnostic mammograms are used for those who have symptoms such as a lump, pain, nipple thickening or discharge, or those whose breasts have changed shape or size. An ultrasound (US) is often used with a diagnostic mammogram. Diagnostic mammograms are also used to take a closer look at an abnormal area found in a screening mammogram. A radiologist will evaluate the diagnostic mammogram while you wait so if additional testing is needed, it can be done right away. Both types of mammograms use low-dose x-rays to examine the breast. They may use either the standard 2-dimensional (2D) digital mammography or 3-dimensional (3D) mammograms known as tomosynthesis.
 
-MRI scan (magnetic resonance imaging)  
-A magnetic resonance imaging (MRI) scan uses radio waves and powerful magnets
+**MRI scan (magnetic resonance imaging)**  
+- A magnetic resonance imaging (MRI) scan uses radio waves and powerful magnets
 to take pictures of the inside of the body. It does not use x-rays, which means there is
 no radiation delivered to your body during the test. Because of the very strong magnets
 used in the MRI machine, tell the technologist if you have any metal or a pacemaker in your
@@ -131,8 +130,8 @@ body. During the test, you will likely be asked to hold your breath for 10 to 20
 
 ![Biopsy illustration](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Inflammatory%20Breast%20Cancer/page17_img1.jpeg "Biopsy illustration")
 
-PET scan (positron emission tomography)  
-A PET (positron emission tomography) scan uses a radioactive drug called a tracer. A tracer
+**PET scan (positron emission tomography)**  
+- A PET (positron emission tomography) scan uses a radioactive drug called a tracer. A tracer
 is a substance injected into a vein to see where cancer cells are in the body and how
 much sugar is being taken up by the cancer cells. This gives an idea about how fast the
 cancer cells are growing. Cancer cells show up as bright spots on PET scans. However, not all
@@ -142,8 +141,8 @@ infection can also show up as a bright spot. When a PET scan is combined with CT
 called a PET/CT scan. An FDG-PET/CT uses a radiotracer called fluorodeoxyglucose (FDG). It is made of fluoride and a simple form of sugar called glucose. You cannot eat or drink for at least 4 hours before the scan. A sodium Áuoride PET/CT uses a radiotracer made of sodium fluoride. An FES-PET/CT uses FES, which is a radioactive form of the hormone estrogen.
 An FES-PET/CT might be used when cancer is estrogen receptor-positive (ER+).
 
-Ultrasound (US)  
-An ultrasound (US) uses high-energy sound waves to form pictures of the inside of the
+**Ultrasound (US)**  
+- An ultrasound (US) uses high-energy sound waves to form pictures of the inside of the
 body. This is similar to the sonogram used for pregnancy. A wand-like probe (transducer)
 will be held and moved on your bare breast using gel. It may also be placed below your
 armpit. Ultrasound is painless and does not use x-rays, so it can be repeated as needed.
@@ -162,17 +161,17 @@ A biopsy is the removal of a sample of tissue from your body for testing. A path
 examine the biopsy for cancer and write a report called a pathology report. Ask questions
 about your biopsy results and what it means for your treatment. There are different types of biopsies. Some biopsies are guided using imaging, such as ultrasound or MRI. The primary or main tumor is biopsied. Other tumors or tumors in different areas may also be biopsied. You may have tissue removed from the breast, lymph nodes, or both.
 
-Types of biopsies include:  
+**Types of biopsies include:**  
 - Fine-needle aspiration (FNA) or core biopsy (CB) uses needles of different sizes to remove a sample of tissue or fluid. In a vacuum-assisted core biopsy (VACB), suction is used through a needle to remove the sample using a special vacuum device.
 - Excisional biopsy removes the entire abnormal area. This is not the preferred type of biopsy, but may be necessary if other methods are not possible or when the biopsy results don’t match the expected findings. An excisional biopsy is usually done under anesthesia in an operating room.
 - Skin biopsy takes a small sample of inflamed skin on the breast. A sample of inflamed skin on the breast will likely be removed to diagnose inflammatory breast cancer.
 
  
-Axillary lymph node biopsy  
-An axillary lymph node biopsy removes lymph nodes from the armpit to check for cancer cells.  
+**Axillary lymph node biopsy**  
+- An axillary lymph node biopsy removes lymph nodes from the armpit to check for cancer cells.  
 
-Sentinel lymph node biopsy (SLNB)  
-A sentinel lymph node (SLN) is the ¿rst lymph node that cancer cells are most likely to spread
+**Sentinel lymph node biopsy (SLNB)**  
+- A sentinel lymph node (SLN) is the first lymph node that cancer cells are most likely to spread
 to form a primary tumor. Sometimes, there can be more than one sentinel lymph node.
 Removal of the sentinel lymph nodes during surgery is called a sentinel lymph node biopsy
 (SLNB or SNB). This procedure is done during surgery such as a mastectomy (surgery to
@@ -180,15 +179,14 @@ remove the breast) or lumpectomy (surgery to remove the tumor) to determine if a
 cancer cells have traveled to the lymph nodes. The lymph nodes removed are called the
 sentinel nodes. They may or may not contain any cancer cells. Just because these nodes
 are removed, it does not mean that they are positive for cancer.
-
-To find the sentinel lymph node, a radioactive material and other dyes are injected into the
-area where breast tumor is located. From here, the dye travels through the lymphatics in the breast to the lymph nodes. This helps the surgeon ¿nd which of the nodes are
+- To find the sentinel lymph node, a radioactive material and other dyes are injected into the
+area where breast tumor is located. From here, the dye travels through the lymphatics in the breast to the lymph nodes. This helps the surgeon and which of the nodes are
 the sentinel lymph nodes. Once the nodes are found, those containing the radioactive
 material or dye are removed and tested by a pathologist. If cancer is found, then more than
 the sentinel lymph nodes may be removed.
 
-Biopsy results
-Histology is the study of the anatomy (structure) of cells, tissues, and organs under
+**Biopsy results**
+- Histology is the study of the anatomy (structure) of cells, tissues, and organs under
 a microscope. It is used to make treatment decisions. Your pathology report will contain
 information about histology.
 
@@ -203,14 +201,14 @@ Inflammatory breast cancers often produce greater than normal amounts of HER2. H
 epidermal growth factor receptor 2 (HER2) is a protein involved in normal cell growth.
 It is found on the surface of all cells. When amounts are high, it causes cells to grow and
 divide. Some breast cancers have too many HER2 genes or receptors. Too many HER2s is
-called HER2-positive (HER2+). You might hear it called HER2 overexpression or ampli¿cation.
+called HER2-positive (HER2+). You might hear it called HER2 overexpression or amplification.
 There are 2 tests for HER2: Immunohistochemistry (IHC) measures receptors. If the IHC score is 3+, the cancer is HER2+. If the score is 0 or 1, it is considered HER2-negative (HER2-). If the score is 2+, further testing is needed. In situ hybridization (ISH) counts the number of copies of the HER2 gene. This test is done mainly when the IHC score is unclear.
 
-Immunohistochemistry: Immunohistochemistry (IHC) is a special staining process that involves adding a chemical marker to cancer or immune cells. The cells are then studied using a microscope. IHC can ¿nd estrogen, progesterone, and HER2 receptors in breast cancer cells. A
+**Immunohistochemistry**: Immunohistochemistry (IHC) is a special staining process that involves adding a chemical marker to cancer or immune cells. The cells are then studied using a microscope. IHC can estrogen, progesterone, and HER2 receptors in breast cancer cells. A
 pathologist will measure how many cells have estrogen and/or progesterone receptors and
 the number of receptors inside each cell.
 
-FISH or ISH: Fluorescence in situ hybridization (FISH) or other ISH methods like dual ISH are testing methods that involve special dyes called probes that attach to pieces of DNA, the
+**FISH or ISH**: Fluorescence in situ hybridization (FISH) or other ISH methods like dual ISH are testing methods that involve special dyes called probes that attach to pieces of DNA, the
 genetic material in a person’s cells.
 
 ---
@@ -224,11 +222,11 @@ the cell. When hormones attach to receptors inside breast cancer cells, they can
 cancer to grow. If found, these receptors may be targeted using endocrine therapy.Estrogen – plays a role in ovary, uterus, and breast development. Progesterone – plays a role in
 menstrual cycle and pregnancy.
 
-In hormone receptor-positive (HR+) or hormone-sensitive breast cancer, IHC ¿nds
+In **hormone receptor-positive (HR+)** or **hormone-sensitive breast cancer**, IHC
 estrogen receptors (ER+), progesterone hormone receptors (PR+), or both (ER+/
 PR+). Most breast cancers are ER+/PR+ or ER+/PR-.
 
-Hormone receptor-negative (HR-) breast cancer cells do not have estrogen or
+**Hormone receptor-negative (HR-)** breast cancer cells do not have estrogen or
 progesterone hormone receptors. These cancers are sometimes simply called hormone
 negative. HR- cancers often grow faster than HR+ cancers. Both the estrogen and
 progesterone receptors need to be negative for the cancer to be considered HR-.
@@ -237,30 +235,28 @@ progesterone receptors need to be negative for the cancer to be considered HR-.
 
 ## Biomarker testing
 
-A sample from a biopsy of your tumor may be tested to look for speci¿c DNA
+A sample from a biopsy of your tumor may be tested to look for specific DNA
 (deoxyribonucleic acid) mutations/alterations, protein levels, or other molecular features.
 This information is used to choose the best treatment for you. It is sometimes called
-molecular testing or tumor pro¿ling, tumor sequencing, gene expression pooling, or
+molecular testing or tumor, tumor sequencing, gene expression pooling, or
 Genomic testing.
 
-In ER+ breast cancer, testing ¿nds estrogen hormone receptors in at least 1 out of every 100 cancer cells. In ER-low–positive invasive breast cancer, testing ¿nds estrogen
-hormone receptors in 1 to 10 out of every 100 cancer cells.
+In **ER+ breast cancer**, testing estrogen hormone receptors in at least 1 out of every 100 cancer cells. In ER-low–positive invasive breast cancer, testing estrogen hormone receptors in 1 to 10 out of every 100 cancer cells.
 
-Biomarker testing includes tests of genes or their products (proteins). It identi¿es
+Biomarker testing includes tests of genes or their products (proteins). It identifies
 the presence or absence of mutations and certain proteins that might suggest treatment.
 Proteins are written like this: BRCA. Genes are written with italics like this: BRCA. HER2 and
 hormone receptor status are part of biomarker testing. Your treatment team will recommend
 the best types of biomarker testing that are important for you.
 
-Tumor mutation testing
-A sample of your tumor or blood may be used to see if the cancer cells have any speci¿c
-DNA mutations. This is a diႇerent type of DNA testing than the genetic testing for mutations
-you may have inherited from your birth parents. In tumor mutation testing, only the tumor is tested and not the rest of your body. Certain mutations such as PIK3CA, AKT1,
-PTEN, ESR1, NTRK, and RET can be targeted with speci¿c therapies. Testing
+**Tumor mutation testing**
+- A sample of your tumor or blood may be used to see if the cancer cells have any specific
+DNA mutations. This is a different type of DNA testing than the genetic testing for mutations
+you may have inherited from your birth parents. In tumor mutation testing, only the tumor is tested and not the rest of your body. Certain mutations such as PIK3CA, AKT1, PTEN, ESR1, NTRK, and RET can be targeted with specific therapies. Testing
 for ESR1 and RET mutations is done on hormone receptor-positive (HR+) tumors.
 
-PD-L1 testing
-Programmed death ligand 1 (PD-L1) is an
+**PD-L1 testing**
+- Programmed death ligand 1 (PD-L1) is an
 immune protein. If this protein is expressed
 on the surface of cancer cells, it can cause
 your immune cells to ignore the cancer and
@@ -268,31 +264,31 @@ suppress the anti-tumor immune response. If
 your cancer expresses PD-L1, you might have
 treatment that combines chemotherapy and a
 checkpoint inhibitor therapy. This is designed to
-activate your immune system to better ¿ght oႇ
+activate your immune system to better fight off
 the cancer cells.
 
-Tumor mutational burden
-When there are 10 or more mutations per
+**Tumor mutational burden**
+- When there are 10 or more mutations per
 million base pairs of tumor DNA, it is called
 tumor mutational burden-high (TMB-H). TMB-H
 can be used to help predict response to cancer
 treatment using immune checkpoint inhibitors
 that target the protein PD-L1.
 
-MSI-H/dMMR mutation
-Microsatellites are short, repeated strings of
+**MSI-H/dMMR mutation**
+- Microsatellites are short, repeated strings of
 DNA. When errors or defects occur, they are
-¿xed by mismatch repair (MMR) proteins.
+used by mismatch repair (MMR) proteins.
 Some cancers have DNA mutations for
 changes that prevent these errors from being
-¿xed. This is called microsatellite instability
-(MSI) or MMR de¿ciency (dMMR). When
+used. This is called microsatellite instability
+(MSI) or MMR deficiency (dMMR). When
 cancer cells have more than a normal number
 of microsatellites, it is called MSI-high (MSI-H).
 This is often due to dMMR genes.
 
-Tumor markers
-Your blood or biopsy tissue may be tested for
+**Tumor markers**
+- Your blood or biopsy tissue may be tested for
 proteins called tumor markers. Knowing this
 information can help plan treatment. Examples
 of some tumor markers in breast cancer
@@ -307,8 +303,8 @@ cancer. Therefore, they are not routinely
 checked and depend on your individual
 situation.
 
-Liquid biopsy
-Some abnormal changes (mutations) can be
+**Liquid biopsy**
+- Some abnormal changes (mutations) can be
 found by testing circulating tumor DNA (ctDNA)
 in the blood. In a liquid biopsy, a sample of
 blood is taken to look for cancer cells or for
@@ -340,20 +336,20 @@ Also, other family members might carry these
 mutations. Tell your care team if there is a
 family history of cancer.
 
-BRCA tests
-Everyone has BRCA genes. Normal BRCA
+**BRCA tests**
+- Everyone has BRCA genes. Normal BRCA
 genes help to prevent tumor growth. They help
-¿x damaged cells and help cells grow normally.
+damaged cells and help cells grow normally.
 BRCA mutations put you at risk for more than
 one type of cancer. Mutations in BRCA1 or
 BRCA2 increase the risk of breast, ovarian,
 prostate, colorectal, pancreatic, and melanoma
 skin cancers. Mutated BRCA genes can also
-aႇect how some treatments work. These tests
+affect how some treatments work. These tests
 might be repeated.
 
-Other genes
-Other genes such as PALB2, p53, CHEK2,
+**Other genes**
+- Other genes such as PALB2, p53, CHEK2,
 and ATM might be tested. For example, PALB2
 normally helps prevent cancer. When PALB2
 mutates, it no longer works correctly. Those
@@ -372,11 +368,11 @@ developing breast cancer.
 
 ## Questions to ask
 
-What tumor features or mutations will you
+- What tumor features or mutations will you
 test for?
-What is tumor HER2 and hormone receptor status?
- When will the test results be ready and who will discuss the results with me?
-What type(s) of biopsy will I have? Will I have a skin biopsy?
+- What is tumor HER2 and hormone receptor status?
+- When will the test results be ready and who will discuss the results with me?
+- What type(s) of biopsy will I have? Will I have a skin biopsy?
 
 
 ---
