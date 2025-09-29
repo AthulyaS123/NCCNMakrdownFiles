@@ -475,29 +475,25 @@ class PDFChapterExtractor:
 
     
     def associate_other_blocks_with_images(self, other_blocks: List[Dict], images: List[Dict]) -> List[Dict]:
-        """Associate other blocks with nearby images and mark caption blocks as used"""
+        """Associate other blocks with nearby images on the SAME PAGE"""
         for other_block in other_blocks:
             other_page = other_block.get('page', 0)
-    
-            for img in images:
-                if not img['rect']:
-                    continue
-                
-                # Extract page number from image filename
-                img_filename = img.get('filename', '')
-                if f"page{other_page+1}_" not in img_filename:
-                    continue  # Skip images from different pages
-
             other_y = other_block['y_center']
             
-            # Find closest image
+            # Find closest image ON THE SAME PAGE ONLY
             best_img = None
             min_distance = float('inf')
             
             for img in images:
-                if not img['rect']:
+                if not img.get('rect'):
                     continue
                 
+                # Check if image is on same page
+                img_filename = img.get('filename', '')
+                if f"page{other_page+1}_" not in img_filename:
+                    continue  # Skip images from different pages
+                
+                # Now calculate distance (only for same-page images)
                 img_y = img['y_center']
                 distance = abs(other_y - img_y)
                 
@@ -505,20 +501,17 @@ class PDFChapterExtractor:
                     min_distance = distance
                     best_img = img
             
-            # Associate if reasonably close
+            # Associate if close enough AND on same page
             if best_img and min_distance < 200:
                 if 'captions' not in best_img:
                     best_img['captions'] = []
                 
-                # Store both the text and formatting info for the caption
                 caption_info = {
                     'text': other_block['text'],
                     'font_size': other_block.get('font_size', 12),
                     'is_header': len(other_block['text'].split()) <= 5 and len(other_block['text']) < 50
                 }
                 best_img['captions'].append(caption_info)
-                
-                # MARK THE CAPTION BLOCK AS USED SO IT DOESN'T GET PROCESSED AGAIN
                 other_block['used_as_caption'] = True
                 print(f"[DEBUG] Marked block as caption: '{other_block['text'][:30]}...'")
         
@@ -648,8 +641,8 @@ class PDFChapterExtractor:
                 x_pos = ob.get('x_left', 0)
                 
                 # Only take blocks from top-left area of first page
-                if (y_pos < page_height * 0.25 and 
-                    x_pos < boundaries.get('left_col_right', 300) + 40):
+                if (y_pos < page_height * 0.35 and 
+                    x_pos < boundaries.get('left_col_right', 300)):
                     beginning_blocks.append(ob)
             
             # Add beginning paragraph
@@ -893,6 +886,55 @@ class PDFChapterExtractor:
         self.debug_page_analysis(6)  # Page 7 is index 6
         self.debug_column_detection(6)
 
+    def debug_block_properties(self, first_page: int, last_page: int):
+        """Debug function to analyze block properties across pages"""
+        if not self.doc:
+            self.open_pdf()
+        
+        chapter_pages = self.get_chapter_pages(first_page, last_page)
+        
+        print(f"\n=== BLOCK PROPERTIES DEBUG (Pages {first_page}-{last_page}) ===")
+        
+        for page_num in chapter_pages:
+            page = self.doc[page_num]
+            text_dict = page.get_text("dict")
+            page_height = page.rect.height
+            
+            print(f"\n--- PAGE {page_num + 1} ---")
+            
+            for block_idx, block in enumerate(text_dict["blocks"]):
+                if "lines" not in block:
+                    continue
+                bbox = block['bbox']
+                
+                block_text = ""
+                font_sizes = []
+                colors = []
+                
+                for line in block["lines"]:
+                    for span in line["spans"]:
+                        block_text += span["text"]
+                        font_sizes.append(span["size"])
+                        colors.append(span["color"])
+                
+                if not block_text.strip() or self.should_exclude_text(block_text, bbox, page_height):
+                    continue
+                
+                avg_font_size = sum(font_sizes) / len(font_sizes) if font_sizes else 0
+                dominant_color = max(set(colors), key=colors.count) if colors else 0
+                
+                # Show first 50 chars of text
+                text_preview = block_text.strip()[:50] + "..." if len(block_text.strip()) > 50 else block_text.strip()
+                
+                print(f"Block {block_idx:2d}: Font={avg_font_size:5.1f} Color={dominant_color:8.0f} X={bbox[0]:5.0f} Text: '{text_preview}'")
+                
+                # Flag potential headers
+                if avg_font_size > 14:  # Adjust threshold as needed
+                    print(f"         ^^^ POTENTIAL HEADER (large font)")
+                if dominant_color != 0:  # Assuming 0 is black text
+                    print(f"         ^^^ POTENTIAL HEADER (different color)")
+
+
     # Usage:
     # extractor = PDFChapterExtractor("breast-invasive-patient.pdf")
     # extractor.debug_quick_fix()
@@ -985,6 +1027,60 @@ class PDFChapterExtractor:
             'other': other_markdown,
             'combined': combined_markdown
         }
+
+    def debug_image_caption_association(self, first_page: int, last_page: int):
+        """Debug how captions are being associated with images"""
+        if not self.doc:
+            self.open_pdf()
+        
+        chapter_pages = self.get_chapter_pages(first_page, last_page)
+        style_analysis = self.analyze_text_styles(chapter_pages)
+        main_content_area = self.detect_main_content_area(style_analysis)
+        
+        all_other_blocks = []
+        all_images = []
+        
+        # Process each page
+        for page_num in chapter_pages:
+            page = self.doc[page_num]
+            main_blocks, other_blocks = self.classify_text_blocks(
+                page, page_num, main_content_area['main_font_size'], main_content_area
+            )
+            page_images = self.extract_images_from_page(page, page_num)
+            
+            all_other_blocks.extend(other_blocks)
+            all_images.extend(page_images)
+        
+        print(f"\n=== IMAGE CAPTION ASSOCIATION DEBUG ===")
+        print(f"\nTotal images: {len(all_images)}")
+        print(f"Total other blocks: {len(all_other_blocks)}")
+        
+        # Show what we have
+        for img in all_images:
+            print(f"\nImage: {img['filename']} (page from filename)")
+            print(f"  Y-center: {img['y_center']:.1f}")
+        
+        for i, ob in enumerate(all_other_blocks):
+            print(f"\nOther Block {i}: page={ob.get('page', 'MISSING')+1} y={ob['y_center']:.1f}")
+            print(f"  Text: '{ob['text'][:60]}...'")
+        
+        # Now run the association
+        print(f"\n=== RUNNING ASSOCIATION ===")
+        self.associate_other_blocks_with_images(all_other_blocks, all_images)
+        
+        # Show results
+        print(f"\n=== ASSOCIATION RESULTS ===")
+        for img in all_images:
+            print(f"\nImage: {img['filename']}")
+            if img.get('captions'):
+                print(f"  Has {len(img['captions'])} captions:")
+                for cap in img['captions']:
+                    if isinstance(cap, dict):
+                        print(f"    - '{cap['text'][:60]}...'")
+                    else:
+                        print(f"    - '{cap[:60]}...'")
+            else:
+                print(f"  No captions")
     
     def save_chapter_markdown(self, first_page: int, last_page: int, chapter_title: str = None, output_filename: str = None) -> Dict[str, str]:
         """Extract pages and save to three separate markdown files"""
@@ -1134,6 +1230,9 @@ def main():
 if __name__ == "__main__":
     # Install required packages: pip install PyMuPDF pillow
     main()
+    #pdf_path = "breast-invasive-patient.pdf"
+    #extractor = PDFChapterExtractor(pdf_path, output_dir="nccn_markdowns\\Invasive Breast Cancer")
+    #extractor.debug_image_caption_association(7, 9)
     #render_page_with_block_boxes(pdf_path, 8, "page9_blocks.jpg")
     #print_block_details(pdf_path, 7)
     #pdf_path = "breast-invasive-patient.pdf"
