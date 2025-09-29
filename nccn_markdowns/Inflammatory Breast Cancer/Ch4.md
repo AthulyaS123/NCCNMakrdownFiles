@@ -29,15 +29,19 @@ Inflammatory breast cancer (IBC) is treatable.
 Treatment can be local, systemic, or usually a
 combination of both.
 
-
 Local therapy focuses on the breast, chest
-wall, and lymph node area. It includes:
-Surgery (mastectomy and lymph node
+wall, and lymph node area.It includes:
+- Surgery (mastectomy and lymph node
 surgery)
-Radiation therapy (RT)
+- Radiation therapy (RT)
 
 Systemic therapy works throughout the
-body. It includes: Chemotherapy, HER2-targeted therapy, Inhibitors and other targeted therapies, Immunotherapy, Endocrine therapy
+body. It includes:
+- Chemotherapy
+- HER2-targeted therapy
+- Inhibitors and other targeted therapies
+- Immunotherapy
+- Endocrine therapy
 
 IBC is treated with systemic (drug) therapy
 to shrink the tumor, followed by surgery to
@@ -134,11 +138,11 @@ the breast, it is called a modified radical
 Mastectomy.
 
 There are 3 levels of axillary lymph nodes:
-Level I – nodes located below the lower
+- Level I – nodes located below the lower
 edge of the chest muscle
-Level II – nodes located underneath the
+- Level II – nodes located underneath the
 chest muscle
-Level III – nodes located above the
+- Level III – nodes located above the
 chest muscle near the collarbone
 
  ![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Inflammatory%20Breast%20Cancer/page35_img1.jpeg "Trusted source illustration")
@@ -166,21 +170,20 @@ are best for your situation, if RT will be
 combined with chemotherapy, and what side
 effects to expect.
 
-The following are types of radiation therapy
+- The following are types of radiation therapy
 used to treat breast cancer:
-Whole breast radiation therapy (WBRT) is used to treat the entire breast.
-Lymph node radiation therapy is
-used to treat the lymph nodes. It is also
-called regional nodal irradiation (RNI).
+  - Whole breast radiation therapy (WBRT) is used to treat the entire breast.
+  - Lymph node radiation therapy is used to treat the lymph nodes. It is also
+ called regional nodal irradiation (RNI).
 
-Radiation may be given to the breast and
+- Radiation may be given to the breast and
 chest wall, infraclavicular region (below the
 collarbone), supraclavicular area (above the
 collarbone), or lymph nodes found inside the
 breast (intramammary), behind the ribcage
 (internal mammary), or axillary bed (armpit).
 
-External beam radiation therapy (EBRT) uses
+- External beam radiation therapy (EBRT) uses
 a machine outside of the body called a linear
 accelerator (linac) to aim radiation at the whole
 breast (called whole breast radiation therapy
@@ -216,10 +219,10 @@ Anthracyclines include doxorubicin
 (Adriamycin), doxorubicin liposomal
 injection (Doxil), and epirubicin (Ellence).
 
-Taxanes include docetaxel, paclitaxel,
+- Taxanes include docetaxel, paclitaxel,
 and albumin-bound paclitaxel.
 
-Antimetabolites include capecitabine
+- Antimetabolites include capecitabine
 (Xeloda), fluorouracil, gemcitabine, and
 methotrexate.
 
@@ -238,11 +241,11 @@ cell-specific chemotherapy. It attaches to a
 protein found on the outside of the cancer
 cell, then enters the cell. Once inside the
 cell, chemotherapy is released. ADCs are
-given in cycles. ADC examples include
-ado-trastuzumab emtansine (Kadcyla),
-fam-trastuzumab deruxtecan-nxki (Enhertu,
-T-DXd), and sacituzumab govitecan-hziy
-(Trodelvy).
+given in cycles. 
+ADC examples include:
+- ado-trastuzumab emtansine (Kadcyla),
+- fam-trastuzumab deruxtecan-nxki (Enhertu,T-DXd)
+- sacituzumab govitecan-hziy (Trodelvy).
 
  ![Trusted source](https://raw.githubusercontent.com/AthulyaS123/NCCNDocImages/main/nccn_ibc_images/Inflammatory%20Breast%20Cancer/chapter4.jpeg "Trusted source illustration")
 
@@ -257,13 +260,13 @@ targeted therapy is given with chemotherapy.
 However, it might be used alone or in
 combination with endocrine therapy.
 
-HER2 antibodies prevent HER2 growth
+- HER2 antibodies prevent HER2 growth
 signals from outside the cell. They also
 increase the attack of immune cells on
 cancer cells.
-HER2 inhibitors stop HER2 growth
+- HER2 inhibitors stop HER2 growth
 signals from within the cell.
-HER2 conjugates or HER2 antibody
+- HER2 conjugates or HER2 antibody
 drug conjugates (ADCs) deliver cell-
 specific chemotherapy. They attach
 directly to HER2s then enter the cell.
@@ -281,8 +284,12 @@ affect the ability of a drug to do its job. This
 is called a drug interaction.
 
 It is critical to speak with your care team
-about any supplements you may be
-taking. Some examples include: Turmeric, Ginkgo biloba, Green tea extract, St. John’s Wort, Antioxidants
+about any supplements you may be taking. Some examples include:
+- Turmeric
+- Ginkgo biloba
+- Green tea extract
+- St. John’s Wort
+- Antioxidants
 
 Certain medicines can also affect the
 ability of a drug to do its job. Antacids,
@@ -331,7 +338,7 @@ treatments. Alpelisib (Piqray) is an example of
 a PIK3CA inhibitor and capivasertib (Truqap) is
 an AKT1 inhibitor.
   
-mTOR inhibitors: mTOR is a cell protein that helps cells grow
+- mTOR inhibitors: mTOR is a cell protein that helps cells grow
 and divide. Endocrine therapy may stop
 working if mTOR becomes overactive. mTOR
 inhibitors are used to get endocrine therapy
@@ -360,48 +367,48 @@ system is made up of organs and tissues that
 produce hormones. Hormones are natural
 chemicals released into the bloodstream.
 
-Estrogen is made mainly by the ovaries,
+- Estrogen is made mainly by the ovaries,
 but is also made by other tissues in the
 body such as fat tissue.
 Progesterone is made mainly by the
 ovaries.
-Luteinizing hormone-releasing
+- Luteinizing hormone-releasing
 hormone (LHRH) is made by a part
 of the brain called the hypothalamus. It
 tells the ovaries to make estrogen and
 progesterone and testicles to make
 testosterone. LHRH is also called
 gonadotropin-releasing hormone (GnRH).
-Androgen is made by the adrenal
+- Androgen is made by the adrenal
 glands, testicles, and ovaries.
 Hormones may cause breast cancer to
 grow. Endocrine therapy will stop your body
 from making hormones or it will block what
 hormones do in the body. This can slow tumor
 growth or shrink the tumor for a period of time.
-Endocrine therapy is sometimes called
+- Endocrine therapy is sometimes called
 hormone therapy or anti-estrogen. It is not the
 same as hormone replacement therapy (HRT)
 used for menopause.
-Endocrine therapy will suppress the production
+- Endocrine therapy will suppress the production
 of hormones and affect one's ability to become
 pregnant during treatment. Those who want to
 have children in the future should be referred
 to a fertility specialist before starting endocrine
 therapy.
 
-For those assigned male at birth whose bodies
+- For those assigned male at birth whose bodies
 continue to make testosterone, endocrine
 therapy includes tamoxifen or an aromatase
 inhibitor (AI) with a testosterone-suppressing
 therapy.
 
-If you have menstrual periods, you are
+- If you have menstrual periods, you are
 in premenopause. In premenopause, the
 ovaries are the main source of estrogen and
 progesterone.
 
-GnRH agonists may be used to
+- GnRH agonists may be used to
 temporarily induce menopause for those
 in premenopause. A combination of GnRH
 agonists and tamoxifen or aromatase inhibitors
@@ -410,7 +417,7 @@ those in premenopause. Ovarian suppression
 or ablation is frequently considered for higher
 risk ER+ breast cancers.
 
-In menopause, the ovaries permanently
+- In menopause, the ovaries permanently
 stop producing hormones and menstrual
 periods stop. Estrogen and progesterone
 levels are low, but the adrenal glands, liver,
@@ -438,9 +445,8 @@ inhibitors or GnRH agonists, can cause bone
 loss (osteoporosis), which puts you at an
 increased risk for fractures.
 
-Drugs used to prevent bone loss and fractures: Oral bisphosphonates, Zoledronic acid (Zometa), Pamidronate (Aredia), Denosumab (Prolia)
-
-Drugs used to treat bone metastases: Zoledronic acid (Zometa), Pamidronate (Aredia), Denosumab (Xgeva)
+- Drugs used to prevent bone loss and fractures: Oral bisphosphonates, Zoledronic acid (Zometa), Pamidronate (Aredia), Denosumab (Prolia)
+- Drugs used to treat bone metastases: Zoledronic acid (Zometa), Pamidronate (Aredia), Denosumab (Xgeva)
 
 You may be screened for bone weakness
 (osteoporosis) using a bone mineral density
@@ -451,12 +457,10 @@ called a dual-energy x-ray absorptiometry
 density tests look for osteoporosis and help
 predict your risk for bone fractures.
 
-Zoledronic acid, pamidronate, and
-denosumab
-Zoledronic acid, pamidronate, and denosumab
+- Zoledronic acid, pamidronate, and denosumab
 are used to prevent bone loss (osteoporosis)
 and fractures caused by endocrine therapy.
-Zoledronic acid and denosumab are also
+- Zoledronic acid and denosumab are also
 used in those with metastatic inflammatory
 breast cancer who have bone metastases
 to help reduce the likelihood of fractures,
