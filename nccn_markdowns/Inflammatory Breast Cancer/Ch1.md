@@ -1,4 +1,6 @@
-# What is inflammatory breast cancer?
+# About inflammatory breast cancer
+
+## What is inflammatory breast cancer?
 
 Inflammatory breast cancer (IBC) is a type of invasive breast cancer. Most inflammatory breast cancers are invasive ductal carcinomas—cancer that starts in the cells that line the milk ducts and spreads into surrounding tissue. What makes IBC different from other breast cancers is its tendency to invade the drainage channels (lymphatics) of the breast and overlying skin. This causes the breast to rapidly swell with backed up fluid and turn red as if inflamed.
 
@@ -16,7 +18,7 @@ It's important not to dismiss any strange breast skin changes, including redness
 
 Like other breast cancers, IBC can happen in those assigned male at birth. Although there are some differences between those assigned male and those assigned female at birth, treatment is very similar for all genders.
 
-# What are the parts of the breast?
+## What are the parts of the breast?
 
 The breast is a gland on the chest. The breast is made of milk ducts, fat, nerves, lymph and blood vessels, ligaments, and other connective tissue. Behind the breast is the pectoral (chest) muscle and ribs. Muscles and ligaments help hold the breast in place.
 
@@ -26,11 +28,11 @@ The ring of darker breast skin is called the areola. The raised tip within the a
 
 Lymph drains from breast tissue into lymph vessels and travels to lymph nodes near your armpit (axilla). Lymph is a clear fluid that gives cells water and food. It also helps to fight germs. Nodes near the armpit are called axillary lymph nodes (ALNs). Cancer cells can travel though lymph and lymph vessels to lymph nodes.
 
-## Invasive ductal carcinoma
+### Invasive ductal carcinoma
 
 Most inflammatory breast cancers (IBCs) are invasive ductal carcinomas. This means that cancer started in the cells that line the milk ducts and has spread into surrounding tissue.
 
-# What's in this book?
+## What's in this book?
 
 This book is organized into the following chapters:
 
@@ -48,7 +50,7 @@ Chapter 7: The breast after surgery offers more information on flat closure and 
 
 Chapter 8: Other resources provides information on patient advocacy groups and where to get help.
 
-# Why you should read this book
+## Why you should read this book
 
 Making decisions about cancer care can be stressful. You may need to make tough decisions under pressure about complex choices.
 
@@ -56,7 +58,7 @@ The NCCN Guidelines for Patients are trusted by patients and providers. They cle
 
 Cancer care is not the same for everyone. By following expert recommendations for your situation, you are more likely to improve your care and have better outcomes as a result. Use this book as your guide to find the information you need to make important decisions.
 
-# What can you do to get the best care?
+## What can you do to get the best care?
 
 Advocate for yourself. You have an important role to play in your care. In fact, you're more likely to get the care you want by asking questions and making shared decisions with your care team. Find an oncologist who is willing to spend time answering all your questions. The better you understand the disease and your treatment options, the more informed decisions you can make. Consider seeking the opinion of a breast cancer specialist.
 

@@ -1,3 +1,5 @@
+# About ductal carcinoma in situ
+
 ## What is DCIS?
 
 Ductal carcinoma in situ (DCIS) or intraductal carcinoma is found in the cells that line the ducts. Ducts are thin tubes that carry milk in the breast. DCIS is noninvasive cancer. Noninvasive means the cancerous cells are in place (in situ) and have not spread anywhere else.
@@ -38,8 +40,6 @@ The NCCN Guidelines for Patients will help you understand cancer care. With bett
 You may not know what to ask your care team. That's common. Each chapter in this book ends with an important section called Questions to ask. These suggested questions will help you get more information on all aspects of your care.
 
 Take the next step and keep reading to learn what is the best care for you\!
-
-## Why you should read this book
 
 Making decisions about cancer care can be stressful. You may need to make tough decisions under pressure about complex choices.
 
