@@ -1,8 +1,9 @@
+# Testing for DCIS
 Treatment planning starts with testing. This chapter presents an overview of the tests you might receive and what to expect.
 
 Results from biopsy and imaging studies will be used to determine your treatment plan. For possible tests, see Guide 1.
 
-## Guide 1: Possible tests
+### Guide 1: Possible tests
 
   * Medical history and physical exam
   * Diagnostic mammogram of both breasts
@@ -35,7 +36,7 @@ During a physical exam, your health care provider may:
   * Examine your breasts to look for lumps, nipple discharge or bleeding, or skin changes.
   * Feel for enlarged lymph nodes in your neck, underarm, and groin.
 
-## Clinical breast exam
+### Clinical breast exam
 
 Clinical breast exam (CBE) is a physical exam of the bare breast performed by a health care provider to check for lumps or other changes. It is done while you are seated and/or lying down. Your provider should take time to palpate (feel) the entire breast, including the armpit. A nurse or assistant might also be in the room during the exam.
 
@@ -63,7 +64,7 @@ A radiologist will evaluate the **diagnostic mammogram** while you wait so if ad
 
 Both types of mammograms use low-dose x-rays to examine the breast. They may use either the standard 2-dimensional (2D) digital mammogram or 3-dimensional (3D) mammogram known as tomosynthesis.
 
-## Breast MRI scan
+### Breast MRI scan
 
 A magnetic resonance imaging (MRI) scan uses radio waves and powerful magnets to take pictures of the inside of the body. It does not use x-rays, which means there is no radiation delivered to your body during the test. Because of the very strong magnets used in the MRI machine, tell the technologist if you have any metal in your body. During the test, you will likely be asked to hold your breath for 10 to 20 seconds as the technician collects the images.
 
@@ -71,7 +72,7 @@ For a breast MRI, a gadolinium-based contrast agent (GBCA)—a rare, heavy metal
 
 A closed MRI has a capsule-like design where the magnet surrounds you. The space is small and enclosed. An open MRI has a magnetic top and bottom, which allows for an opening on each end. Closed MRIs are more common than open MRIs, so if you have claustrophobia (a dread or fear of enclosed spaces), be sure to talk to your care team about it. MRI scans take longer to perform than CT scans.
 
-### Breast MRI
+#### Breast MRI
 
 If needed, a breast MRI will be done in addition to a mammogram. In a breast MRI, you are positioned face down with your arms overhead.
 

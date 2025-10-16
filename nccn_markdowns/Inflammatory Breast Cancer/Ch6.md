@@ -10,7 +10,7 @@ Like other breast cancers, IBC can develop in those assigned male at birth.
 
 > "My 3-month-old son stopped nursing on my left breast and it was swollen and painful. The doctor said it was mastitis, but this didn't feel the same as when I'd had that before. Even with the antibiotic, it didn't improve. An ultrasound showed a questionable area in that breast and a biopsy confirmed inflammatory breast cancer (IBC)."
 
-## Where does treatment start?
+### Where does treatment start?
 
 Treatment for IBC starts with preoperative systemic (drug) therapy. Preoperative therapy is treatment given before surgery. It is based on HER2 and hormone receptor (HR) expression status of the tumor cells.
 
@@ -18,11 +18,11 @@ Cancer can still progress during preoperative systemic therapy. If cancer progre
 
 Treatment before surgery is described next.
 
-# HER2-
+## HER2-
 
 In HER2-negative (HER2-) breast cancer, tumor cells do not express increased levels of HER2. Chemotherapy is used to treat HER- cancer. It might include another systemic therapy. Systemic therapy options for HER2- can be found in **Guide 4**.
 
-## Triple-negative breast cancer
+### Triple-negative breast cancer
 
 In triple-negative breast cancer (TNBC), the tumor tested negative for HER2, estrogen receptors, and progesterone receptors. It is written as ER- and/or PR- with HER2-. This cancer is treated with chemotherapy and other systemic therapies found in **Guide 4**.
 
@@ -33,7 +33,7 @@ In triple-negative breast cancer (TNBC), the tumor tested negative for HER2, est
 | **Used in some cases** | \<ul\>\<li\>Doxorubicin and cyclophosphamide (AC)\</li\>\<li\>Cyclophosphamide, methotrexate, and fluorouracil (CMF)\</li\>\<li\>Doxorubicin and cyclophosphamide (AC) with paclitaxel\</li\>\</ul\><br>**TNBC:**\<ul\>\<li\>Options listed above\</li\>\<li\>Docetaxel, carboplatin, and pembrolizumab (preoperative only)\</li\>\<li\>Doxorubicin and cyclophosphamide (AC) with carboplatin and docetaxel\</li\>\<li\>Capecitabine (maintenance therapy after adjuvant chemotherapy)\</li\>\</ul\> |
 | **Notes** | Other taxanes (ie, docetaxel, paclitaxel, albumin-bound paclitaxel) might be substituted in some cases |
 
-# HER2+
+## HER2+
 
 Inflammatory breast cancers often produce greater than normal amounts of HER2. If the tumor is HER2-positive (HER2+), then it is treated with HER2-targeted therapy found in **Guide 5**.
 
@@ -48,13 +48,13 @@ In triple-positive breast cancer, tumor cells have estrogen receptors (ER+), pro
 | **Used in some cases** | \<ul\>\<li\>Docetaxel, cyclophosphamide, and trastuzumab\</li\>\<li\>Doxorubicin and cyclophosphamide (AC) followed by docetaxel and trastuzumab, followed by paclitaxel with trastuzumab\</li\>\<li\>Doxorubicin and cyclophosphamide (AC) followed by docetaxel, trastuzumab, and pertuzumab, followed by paclitaxel, trastuzumab, and pertuzumab\</li\>\<li\>Neratinib (adjuvant only)\</li\>\<li\>Paclitaxel with trastuzumab and pertuzumab\</li\>\<li\>Ado-trastuzumab emtansine (TDM-1) (adjuvant only)\</li\>\</ul\> |
 | **Notes** | Other taxanes (ie, docetaxel, paclitaxel, albumin-bound paclitaxel) might be substituted in some cases |
 
-# Treatment response
+## Treatment response
 
 The next treatment is based on how the tumor responded to preoperative systemic therapy. It is called preoperative (before surgery) treatment because the goal is surgery, when possible. Systemic therapy given after surgery is called adjuvant therapy. Adjuvant systemic therapy may be given after surgery to reduce the chance of cancer recurrence.
 
 A physical exam and imaging tests should be done to assess how the cancer responded to preoperative systemic therapy. Treatment will be based on if the tumor can be removed with surgery or if the tumor did not shrink enough to be removed with surgery.
 
-## Surgery is an option
+### Surgery is an option
 
 If surgery is possible, then a total mastectomy with level I and II axillary lymph node dissection is the recommended option. Because IBC usually involves a large portion of the breast, lumpectomy is not typically an option. You may choose a delayed breast reconstruction as part of the mastectomy. Radiation therapy (RT) is part of this treatment.
 
@@ -65,7 +65,7 @@ If the tumor is HER2+, then you will complete up to one year of HER2-targeted th
 > For a list of systemic therapies that target HER2+, **see Guide 5.**
 > For a list of endocrine therapy options, **see Guide 6.**
 
-## Surgery is not an option
+### Surgery is not an option
 
 Surgery is not always possible. Even though surgery might not be an option, systemic therapy will continue. If the cancer is not responding to systemic therapy, then radiation may be considered to try to make the cancer resectable (able to be removed with surgery). The goal of treatment is to reduce the amount of cancer. Talk with your care team about your goals of treatment and your treatment preferences. Your wishes are always important.
 
@@ -81,7 +81,7 @@ Surgery is not always possible. Even though surgery might not be an option, syst
 | | **Option 2** \<ul\>\<li\>Tamoxifen for 4.5 to 6 years, then an aromatase inhibitor for 5 years or consider tamoxifen for another 5 years (for a total of 10 years on tamoxifen)\</li\>\</ul\> | |
 | | **Option 3** \<ul\>\<li\>For those who can't have aromatase inhibitors or who don't want aromatase inhibitors, take tamoxifen for 5 years or consider tamoxifen for up to 10 years\</li\>\</ul\> | |
 
-# Follow-up care
+## Follow-up care
 
 After treatment, you will receive follow-up care. During this time, your health will be monitored for side effects of treatment (late effects) and the possible return of cancer (recurrence). It is important to keep any follow-up care and imaging test appointments. Seek routine medical care, including regular doctor visits for preventive care and cancer screening. Find out who will coordinate with specialists for your follow-up care.
 
@@ -105,7 +105,7 @@ Follow-up care can be found in **Guide 7**.
   * Bone density tests for those on an aromatase inhibitor or who later have ovarian issues
   * Maintain an ideal body weight (BMI of 20 to 25), be active, eat a mostly plant-based diet, exercise, limit alcohol, and quit smoking/vaping nicotine
 
-# Key points
+## Key points
 
   * Treatment for inflammatory breast cancer (IBC) starts with preoperative systemic therapy. Preoperative therapy is treatment given before surgery. It is based on hormone receptor (HR) and HER2 expression status of the tumor cells.
   * Treatment after surgery is called adjuvant treatment. It often includes systemic therapy and radiation therapy (RT). It is given to kill any remaining cancer cells and to help prevent the return of cancer.
@@ -118,7 +118,7 @@ Follow-up care can be found in **Guide 7**.
 >
 > It is important to keep follow-up visits and imaging test appointments. Seek good routine medical care, including preventive care and cancer screenings. Continue to take all medicines as prescribed.
 
-# Questions to ask
+## Questions to ask
 
   * What treatments do you recommend and why?
   * Does the order of treatments matter?
